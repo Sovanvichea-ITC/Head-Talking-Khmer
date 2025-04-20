@@ -1,0 +1,527 @@
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 54, in _pin_memory_loop
+    do_one_step()
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 31, in do_one_step
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 116, in get
+    return _ForkingPickler.loads(res)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/multiprocessing/reductions.py", line 355, in rebuild_storage_fd
+    fd = df.detach()
+  File "/usr/lib/python3.8/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/usr/lib/python3.8/multiprocessing/resource_sharer.py", line 87, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 508, in Client
+    answer_challenge(c, authkey)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 752, in answer_challenge
+    message = connection.recv_bytes(256)         # reject large message
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+ConnectionResetError: [Errno 104] Connection reset by peer
+(myenv) vila@vila-lab-c1:~/Desktop/Sovanvichea/Land mark - test/IP_LAP$ PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128 CUDA_VISIBLE_DEVICES=0 python train_video_renderer.py \
+  --sketch_root data_root/lrs2_sketch \
+  --face_img_root data_root/lrs2_face \
+  --audio_root data_root/lrs2_audio
+Project_name: renderer_T1_ref_N3
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/inception.py:43: FutureWarning: The default weight initialization of inception_v3 will be changed in future releases of torchvision. If you wish to keep the old behavior (which leads to long initialization times due to scipy/scipy#11299), please set init_weights=True.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Perceptual loss:
+        Mode: vgg19
+filter videos with min len of  25 ....
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 45839/45839 [00:05<00:00, 9038.58it/s]
+complete,with available vids:  42537 
+
+filter videos with min len of  25 ....
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1243/1243 [00:00<00:00, 8338.92it/s]
+complete,with available vids:  1097 
+
+  0%|                                                                                                                               | 0/443 [00:00<?, ?it/s]/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/functional.py:4296: UserWarning: Default grid_sample and affine_grid behavior has changed to align_corners=False since 1.3.0. Please specify align_corners=True if the old behavior is desired. See the documentation of grid_sample for details.
+  warnings.warn(
+  0%|                                                                                                                               | 0/443 [00:05<?, ?it/s]
+Traceback (most recent call last):
+  File "train_video_renderer.py", line 345, in <module>
+    = model(T_frame_img, T_frame_sketch, ref_N_frame_img, ref_N_frame_sketch, T_mels)# (B*T,3,H,W)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/models/video_renderer.py", line 350, in forward
+    wrapped_h1, wrapped_h2, wrapped_ref = self.flow_module(ref_N_frame_img, ref_N_frame_sketch, target_sketches)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/models/video_renderer.py", line 237, in forward
+    spade_layer = self.spade_layer_1(h2, downsample_64)  #(256,64,64)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/models/video_renderer.py", line 101, in forward
+    input = self.spade_layer_2(input, modulations)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/models/video_renderer.py", line 78, in forward
+    conv_out = self.conv1(modulation)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 384.00 MiB. GPU 0 has a total capacty of 23.54 GiB of which 98.94 MiB is free. Including non-PyTorch memory, this process has 23.18 GiB memory in use. Of the allocated memory 22.71 GiB is allocated by PyTorch, and 20.68 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 54, in _pin_memory_loop
+    do_one_step()
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 31, in do_one_step
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 116, in get
+    return _ForkingPickler.loads(res)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/multiprocessing/reductions.py", line 355, in rebuild_storage_fd
+    fd = df.detach()
+  File "/usr/lib/python3.8/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/usr/lib/python3.8/multiprocessing/resource_sharer.py", line 87, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 508, in Client
+    answer_challenge(c, authkey)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 752, in answer_challenge
+    message = connection.recv_bytes(256)         # reject large message
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+ConnectionResetError: [Errno 104] Connection reset by peer
+(myenv) vila@vila-lab-c1:~/Desktop/Sovanvichea/Land mark - test/IP_LAP$ PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:128 CUDA_VISIBLE_DEVICES=0 python train_video_renderer.py   --sketch_root data_root/lrs2_sketch   --face_img_root data_root/lrs2_face   --audio_root data_root/lrs2_audio
+Project_name: renderer_T1_ref_N3
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/inception.py:43: FutureWarning: The default weight initialization of inception_v3 will be changed in future releases of torchvision. If you wish to keep the old behavior (which leads to long initialization times due to scipy/scipy#11299), please set init_weights=True.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Perceptual loss:
+        Mode: vgg19
+filter videos with min len of  25 ....
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 45839/45839 [00:05<00:00, 7932.44it/s]
+complete,with available vids:  42537 
+
+filter videos with min len of  25 ....
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1243/1243 [00:00<00:00, 7772.08it/s]
+complete,with available vids:  1097 
+
+  0%|                                                                                                                              | 0/1063 [00:00<?, ?it/s]/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/functional.py:4296: UserWarning: Default grid_sample and affine_grid behavior has changed to align_corners=False since 1.3.0. Please specify align_corners=True if the old behavior is desired. See the documentation of grid_sample for details.
+  warnings.warn(
+  0%|                                                                                                                              | 0/1063 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "train_video_renderer.py", line 345, in <module>
+    = model(T_frame_img, T_frame_sketch, ref_N_frame_img, ref_N_frame_sketch, T_mels)# (B*T,3,H,W)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/models/video_renderer.py", line 350, in forward
+    wrapped_h1, wrapped_h2, wrapped_ref = self.flow_module(ref_N_frame_img, ref_N_frame_sketch, target_sketches)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/models/video_renderer.py", line 250, in forward
+    wrapped_h2 = warping(h2, deformation)   #(256,64,64)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/models/video_renderer.py", line 180, in warping
+    return torch.nn.functional.grid_sample(source_image, deformation)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/functional.py", line 4304, in grid_sample
+    return torch.grid_sampler(input, grid, mode_enum, padding_mode_enum, align_corners)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 160.00 MiB. GPU 0 has a total capacty of 23.54 GiB of which 38.88 MiB is free. Including non-PyTorch memory, this process has 23.25 GiB memory in use. Of the allocated memory 22.75 GiB is allocated by PyTorch, and 59.99 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 54, in _pin_memory_loop
+    do_one_step()
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 31, in do_one_step
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 116, in get
+    return _ForkingPickler.loads(res)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/multiprocessing/reductions.py", line 355, in rebuild_storage_fd
+    fd = df.detach()
+  File "/usr/lib/python3.8/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/usr/lib/python3.8/multiprocessing/resource_sharer.py", line 87, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 508, in Client
+    answer_challenge(c, authkey)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 752, in answer_challenge
+    message = connection.recv_bytes(256)         # reject large message
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+ConnectionResetError: [Errno 104] Connection reset by peer
+(myenv) vila@vila-lab-c1:~/Desktop/Sovanvichea/Land mark - test/IP_LAP$ CUDA_VISIBLE_DEVICES=0 python train_video_renderer.py   --sketch_root data_root/lrs2
+_sketch   --face_img_root data_root/lrs2_face   --audio_root data_root/lrs2_audio
+Project_name: renderer_T1_ref_N3
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/inception.py:43: FutureWarning: The default weight initialization of inception_v3 will be changed in future releases of torchvision. If you wish to keep the old behavior (which leads to long initialization times due to scipy/scipy#11299), please set init_weights=True.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Perceptual loss:
+        Mode: vgg19
+filter videos with min len of  25 ....
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 45839/45839 [00:01<00:00, 23713.23it/s]
+complete,with available vids:  42537 
+
+filter videos with min len of  25 ....
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1243/1243 [00:00<00:00, 29942.80it/s]
+complete,with available vids:  1097 
+
+  0%|                                                                                                                              | 0/1063 [00:00<?, ?it/s]/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/functional.py:4296: UserWarning: Default grid_sample and affine_grid behavior has changed to align_corners=False since 1.3.0. Please specify align_corners=True if the old behavior is desired. See the documentation of grid_sample for details.
+  warnings.warn(
+  0%|                                                                                                                              | 0/1063 [00:02<?, ?it/s]
+Traceback (most recent call last):
+  File "train_video_renderer.py", line 345, in <module>
+    = model(T_frame_img, T_frame_sketch, ref_N_frame_img, ref_N_frame_sketch, T_mels)# (B*T,3,H,W)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/models/video_renderer.py", line 350, in forward
+    wrapped_h1, wrapped_h2, wrapped_ref = self.flow_module(ref_N_frame_img, ref_N_frame_sketch, target_sketches)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/models/video_renderer.py", line 246, in forward
+    output_weight=self.conv_5(spade_layer)       #  (B*T,1,128,128)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/container.py", line 215, in forward
+    input = module(input)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/modules/activation.py", line 101, in forward
+    return F.relu(input, inplace=self.inplace)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/functional.py", line 1471, in relu
+    result = torch.relu(input)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 80.00 MiB. GPU 0 has a total capacty of 23.54 GiB of which 56.88 MiB is free. Including non-PyTorch memory, this process has 23.23 GiB memory in use. Of the allocated memory 22.48 GiB is allocated by PyTorch, and 310.74 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+terminate called without an active exception
+Aborted (core dumped)
+(myenv) vila@vila-lab-c1:~/Desktop/Sovanvichea/Land mark - test/IP_LAP$ CUDA_VISIBLE_DEVICES=0 python train_video_renderer.py   --sketch_root data_root/lrs2_sketch   --face_img_root data_root/lrs2_face   --audio_root data_root/lrs2_audio
+Project_name: renderer_T1_ref_N3
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/inception.py:43: FutureWarning: The default weight initialization of inception_v3 will be changed in future releases of torchvision. If you wish to keep the old behavior (which leads to long initialization times due to scipy/scipy#11299), please set init_weights=True.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Perceptual loss:
+        Mode: vgg19
+filter videos with min len of  25 ....
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████| 45839/45839 [00:01<00:00, 23745.77it/s]
+complete,with available vids:  42537 
+
+filter videos with min len of  25 ....
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1243/1243 [00:00<00:00, 29769.94it/s]
+complete,with available vids:  1097 
+
+  0%|                                                                                                                              | 0/4253 [00:00<?, ?it/s]/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/functional.py:4296: UserWarning: Default grid_sample and affine_grid behavior has changed to align_corners=False since 1.3.0. Please specify align_corners=True if the old behavior is desired. See the documentation of grid_sample for details.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/loss.py:421: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  fake_tensor = self.Tensor(input.size()).fill_(self.fake_label)
+Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_0_checkpoint_step000000000.pth
+Evaluating model for 1 epochs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:48<00:00,  1.00it/s]
+psnr 13.198 ssim 0.320 fid 432.646████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:48<00:00,  1.09it/s]
+eval_warp_loss : 4.4072197117936724 eval_gen_loss 9.08383973147891 global_step: 0
+epoch: 0 step: 99 running_warp_loss: 3.8518 running_gen_loss: 8.9694:   2%|█                                             | 100/4253 [02:24<23:38,  2.93it/s]Evaluating model for 1 epochs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:48<00:00,  1.00it/s]
+psnr 13.294 ssim 0.329 fid 412.525████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:48<00:00,  1.02it/s]
+eval_warp_loss : 3.1344126889465054 eval_gen_loss 9.070305325569363 global_step: 100
+epoch: 0 step: 499 running_warp_loss: 3.2504 running_gen_loss: 8.9698:  12%|█████▎                                       | 500/4253 [06:30<21:19,  2.93it/s]Evaluating model for 1 epochs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:47<00:00,  1.01it/s]
+psnr 13.216 ssim 0.331 fid 406.256████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:47<00:00,  1.03it/s]
+eval_warp_loss : 2.885068547835044 eval_gen_loss 9.03991225881314 global_step: 500
+epoch: 0 step: 1499 running_warp_loss: 3.0680 running_gen_loss: 8.9658:  35%|███████████████▏                           | 1500/4253 [14:02<16:05,  2.85it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_0_checkpoint_step000001500.pth
+Evaluating model for 1 epochs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.01s/it]
+psnr 13.269 ssim 0.337 fid 397.975████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.04it/s]
+eval_warp_loss : 2.7359468729124155 eval_gen_loss 9.034628789359276 global_step: 1500
+epoch: 0 step: 2999 running_warp_loss: 2.9678 running_gen_loss: 8.9737:  71%|██████████████████████████████▎            | 3000/4253 [24:29<07:07,  2.93it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_0_checkpoint_step000003000.pth
+Evaluating model for 1 epochs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.00s/it]
+psnr 13.238 ssim 0.334 fid 396.361████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.01s/it]
+eval_warp_loss : 2.6212570885999487 eval_gen_loss 9.080686175495114 global_step: 3000
+epoch: 0 step: 4252 running_warp_loss: 2.9151 running_gen_loss: 8.9750: 100%|███████████████████████████████████████████| 4253/4253 [33:29<00:00,  2.12it/s]
+epoch: 1 step: 4499 running_warp_loss: 2.8222 running_gen_loss: 8.9872:   6%|██▌                                         | 247/4253 [01:25<23:03,  2.90it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_1_checkpoint_step000004500.pth
+Evaluating model for 1 epochs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:52<00:00,  1.03s/it]
+psnr 13.321 ssim 0.338 fid 397.472████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:51<00:00,  1.00s/it]
+eval_warp_loss : 2.627750968714373 eval_gen_loss 8.996184804023953 global_step: 4500
+epoch: 1 step: 5999 running_warp_loss: 2.7662 running_gen_loss: 8.9754:  41%|█████████████████▋                         | 1747/4253 [11:58<14:30,  2.88it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_1_checkpoint_step000006000.pth
+Evaluating model for 1 epochs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.01s/it]
+psnr 13.209 ssim 0.335 fid 396.272████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.11it/s]
+eval_warp_loss : 2.59097011920509 eval_gen_loss 9.004315988733135 global_step: 6000
+epoch: 1 step: 7499 running_warp_loss: 2.7581 running_gen_loss: 8.9822:  76%|████████████████████████████████▊          | 3247/4253 [22:28<05:48,  2.89it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_1_checkpoint_step000007500.pth
+Evaluating model for 1 epochs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.00s/it]
+psnr 13.255 ssim 0.337 fid 392.384████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.02it/s]
+eval_warp_loss : 2.5928838384260824 eval_gen_loss 9.022354580940457 global_step: 7500
+epoch: 1 step: 8505 running_warp_loss: 2.7547 running_gen_loss: 8.9841: 100%|███████████████████████████████████████████| 4253/4253 [30:06<00:00,  2.35it/s]
+epoch: 2 step: 8999 running_warp_loss: 2.7197 running_gen_loss: 8.9724:  12%|█████                                       | 494/4253 [02:51<21:41,  2.89it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_2_checkpoint_step000009000.pth
+Evaluating model for 1 epochs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.01s/it]
+psnr 13.096 ssim 0.332 fid 396.034████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.01s/it]
+eval_warp_loss : 2.6065885834737657 eval_gen_loss 9.00921064779299 global_step: 9000
+epoch: 2 step: 10499 running_warp_loss: 2.7019 running_gen_loss: 8.9710:  47%|███████████████████▋                      | 1994/4253 [13:21<13:10,  2.86it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_2_checkpoint_step000010500.pth
+Evaluating model for 1 epochs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.02s/it]
+psnr 13.219 ssim 0.333 fid 397.265████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.02it/s]
+eval_warp_loss : 2.563085791167863 eval_gen_loss 9.083635347698806 global_step: 10500
+epoch: 2 step: 11999 running_warp_loss: 2.6922 running_gen_loss: 8.9690:  82%|██████████████████████████████████▌       | 3494/4253 [23:56<04:22,  2.89it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_2_checkpoint_step000012000.pth
+Evaluating model for 1 epochs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.02s/it]
+psnr 13.251 ssim 0.333 fid 399.201████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.02it/s]
+eval_warp_loss : 2.4842695774288353 eval_gen_loss 9.049971081794949 global_step: 12000
+epoch: 2 step: 12758 running_warp_loss: 2.6894 running_gen_loss: 8.9708: 100%|██████████████████████████████████████████| 4253/4253 [30:11<00:00,  2.35it/s]
+epoch: 3 step: 13499 running_warp_loss: 2.6719 running_gen_loss: 8.9656:  17%|███████▍                                   | 741/4253 [04:18<20:26,  2.86it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_3_checkpoint_step000013500.pth
+Evaluating model for 1 epochs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:48<00:00,  1.00it/s]
+psnr 13.155 ssim 0.332 fid 399.419████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:48<00:00,  1.06s/it]
+eval_warp_loss : 2.5112737767193294 eval_gen_loss 9.003329207044128 global_step: 13500
+epoch: 3 step: 14999 running_warp_loss: 2.6558 running_gen_loss: 8.9566:  53%|██████████████████████▏                   | 2241/4253 [14:52<11:38,  2.88it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_3_checkpoint_step000015000.pth
+Evaluating model for 1 epochs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:51<00:00,  1.02s/it]
+psnr 13.268 ssim 0.335 fid 401.228████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:51<00:00,  1.03s/it]
+eval_warp_loss : 2.5144058323781424 eval_gen_loss 9.025105782605092 global_step: 15000
+epoch: 3 step: 16499 running_warp_loss: 2.6475 running_gen_loss: 8.9530:  88%|████████████████████████████████████▉     | 3741/4253 [25:24<02:57,  2.88it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_3_checkpoint_step000016500.pth
+Evaluating model for 1 epochs
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:51<00:00,  1.02s/it]
+psnr 13.216 ssim 0.331 fid 399.199████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:51<00:00,  1.09it/s]
+eval_warp_loss : 2.562682054458408 eval_gen_loss 9.04436655657007 global_step: 16500
+epoch: 3 step: 17011 running_warp_loss: 2.6482 running_gen_loss: 8.9530: 100%|██████████████████████████████████████████| 4253/4253 [30:14<00:00,  2.34it/s]
+epoch: 4 step: 17999 running_warp_loss: 2.6269 running_gen_loss: 8.9772:  23%|█████████▉                                 | 988/4253 [05:44<18:57,  2.87it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_4_checkpoint_step000018000.pth
+Evaluating model for 1 epochs
+
+ 39%|██████████████████████████████████████████████▌                                                                       | 43/109 [00:42<01
+ 40%|███████████████████████████████████████████████▋                                                                      | 44/109 [00:43<01
+ 41%|████████████████████████████████████████████████▋                                                                     | 45/109 [00:44<01
+ 42%|█████████████████████████████████████████████████▊                                                                    | 46/109 [00:45<01
+ 43%|██████████████████████████████████████████████████▉                                                                   | 47/109 [00:46<01
+ 44%|███████████████████████████████████████████████████▉                                                                  | 48/109 [00:47<00
+ 45%|█████████████████████████████████████████████████████                                                                 | 49/109 [00:48<00
+ 46%|██████████████████████████████████████████████████████▏                                                               | 50/109 [00:49<00
+ 47%|███████████████████████████████████████████████████████▏                                                              | 51/109 [00:50<00
+ 48%|████████████████████████████████████████████████████████▎                                                             | 52/109 [00:51<01
+ 49%|█████████████████████████████████████████████████████████▍                                                            | 53/109 [00:52<00
+ 50%|██████████████████████████████████████████████████████████▍                                                           | 54/109 [00:53<00
+ 50%|███████████████████████████████████████████████████████████▌                                                          | 55/109 [00:54<00
+ 51%|████████████████████████████████████████████████████████████▌                                                         | 56/109 [00:55<00
+ 52%|█████████████████████████████████████████████████████████████▋                                                        | 57/109 [00:56<00
+ 53%|██████████████████████████████████████████████████████████████▊                                                       | 58/109 [00:57<00
+ 54%|███████████████████████████████████████████████████████████████▊                                                      | 59/109 [00:58<00
+ 55%|████████████████████████████████████████████████████████████████▉                                                     | 60/109 [00:59<00
+ 56%|██████████████████████████████████████████████████████████████████                                                    | 61/109 [01:00<00
+ 57%|███████████████████████████████████████████████████████████████████                                                   | 62/109 [01:01<00
+ 58%|████████████████████████████████████████████████████████████████████▏                                                 | 63/109 [01:02<00
+ 59%|█████████████████████████████████████████████████████████████████████▎                                                | 64/109 [01:03<00
+ 60%|██████████████████████████████████████████████████████████████████████▎                                               | 65/109 [01:05<00
+ 61%|███████████████████████████████████████████████████████████████████████▍                                              | 66/109 [01:06<00
+ 61%|████████████████████████████████████████████████████████████████████████▌                                             | 67/109 [01:07<00
+ 62%|█████████████████████████████████████████████████████████████████████████▌                                            | 68/109 [01:08<00
+ 63%|██████████████████████████████████████████████████████████████████████████▋                                           | 69/109 [01:09<00
+ 64%|███████████████████████████████████████████████████████████████████████████▊                                          | 70/109 [01:10<00
+ 65%|████████████████████████████████████████████████████████████████████████████▊                                         | 71/109 [01:10<00
+ 66%|█████████████████████████████████████████████████████████████████████████████▉                                        | 72/109 [01:12<00
+ 67%|███████████████████████████████████████████████████████████████████████████████                                       | 73/109 [01:13<00
+ 68%|████████████████████████████████████████████████████████████████████████████████                                      | 74/109 [01:14<00
+ 69%|█████████████████████████████████████████████████████████████████████████████████▏                                    | 75/109 [01:15<00
+ 70%|██████████████████████████████████████████████████████████████████████████████████▎                                   | 76/109 [01:16<00
+ 71%|███████████████████████████████████████████████████████████████████████████████████▎                                  | 77/109 [01:17<00
+ 72%|████████████████████████████████████████████████████████████████████████████████████▍                                 | 78/109 [01:18<00
+ 72%|█████████████████████████████████████████████████████████████████████████████████████▌                                | 79/109 [01:19<00
+ 73%|██████████████████████████████████████████████████████████████████████████████████████▌                               | 80/109 [01:20<00
+ 74%|███████████████████████████████████████████████████████████████████████████████████████▋                              | 81/109 [01:21<00
+ 75%|████████████████████████████████████████████████████████████████████████████████████████▊                             | 82/109 [01:22<00
+ 76%|█████████████████████████████████████████████████████████████████████████████████████████▊                            | 83/109 [01:23<00
+ 77%|██████████████████████████████████████████████████████████████████████████████████████████▉                           | 84/109 [01:24<00
+ 78%|████████████████████████████████████████████████████████████████████████████████████████████                          | 85/109 [01:25<00
+ 79%|█████████████████████████████████████████████████████████████████████████████████████████████                         | 86/109 [01:26<00
+ 80%|██████████████████████████████████████████████████████████████████████████████████████████████▏                       | 87/109 [01:27<00
+ 81%|███████████████████████████████████████████████████████████████████████████████████████████████▎                      | 88/109 [01:28<00
+ 82%|████████████████████████████████████████████████████████████████████████████████████████████████▎                     | 89/109 [01:28<00
+ 83%|█████████████████████████████████████████████████████████████████████████████████████████████████▍                    | 90/109 [01:29<00
+ 83%|██████████████████████████████████████████████████████████████████████████████████████████████████▌                   | 91/109 [01:30<00
+ 84%|███████████████████████████████████████████████████████████████████████████████████████████████████▌                  | 92/109 [01:31<00
+ 85%|████████████████████████████████████████████████████████████████████████████████████████████████████▋                 | 93/109 [01:32<00
+ 86%|█████████████████████████████████████████████████████████████████████████████████████████████████████▊                | 94/109 [01:33<00
+ 87%|██████████████████████████████████████████████████████████████████████████████████████████████████████▊               | 95/109 [01:34<00
+ 88%|███████████████████████████████████████████████████████████████████████████████████████████████████████▉              | 96/109 [01:35<00
+ 89%|█████████████████████████████████████████████████████████████████████████████████████████████████████████             | 97/109 [01:36<00
+ 90%|██████████████████████████████████████████████████████████████████████████████████████████████████████████            | 98/109 [01:37<00
+ 91%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▏          | 99/109 [01:39<00
+ 92%|███████████████████████████████████████████████████████████████████████████████████████████████████████████▎         | 100/109 [01:39<00
+ 93%|████████████████████████████████████████████████████████████████████████████████████████████████████████████▍        | 101/109 [01:40<00
+ 94%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▍       | 102/109 [01:41<00
+ 94%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████▌      | 103/109 [01:42<00
+ 95%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████▋     | 104/109 [01:43<00
+ 96%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋    | 105/109 [01:44<00
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊   | 106/109 [01:45<00
+ 98%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊  | 107/109 [01:46<00
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉ | 108/109 [01:47<00
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.00s/it]
+psnr 13.183 ssim 0.332 fid 398.912
+eval_warp_loss : 2.5283903900636444 eval_gen_loss 9.007265502159749 global_step: 18000
+epoch: 4 step: 18000 running_warp_loss: 2.6262 running_gen_loss: 8.9768:  23%|█████████▉                            epoch: 4 step: 18000 running_warp_loss: 2.6262 running_gen_loss: 8.9768:  23%|█████████▎                            epoch: 4 step: 18001 running_warp_loss: 2.6264 running_gen_loss: 8.9760:  23%|█████████▎                            epoch: 4 step: 18001 running_warp_loss: 2.6264 running_gen_loss: 8.9760:  23%|█████████▎                            epoch: 4 step: 18002 running_warp_loss: 2.6263 running_gen_loss: 8.9759:  23%|█████████▎                            epoch: 4 step: 18002 running_warp_loss: 2.6263 running_gen_loss: 8.9759:  23%|█████████▎                            epoch: 4 step: 18003 running_warp_loss: 2.6262 running_gen_loss: 8.9756:  23%|█████████▎                            epoch: 4 step: 18003 running_warp_loss: 2.6262 running_gen_loss: 8.9756:  23%|█████████▎                            epoch: 4 step: 18004 running_warp_loss: 2.6257 running_gen_loss: 8.9756:  23%|█████████▎                            epoch: 4 step: 18004 running_warp_loss: 2.6257 running_gen_loss: 8.9756:  23%|█████████▌                            epoch: 4 step: 18005 running_warp_loss: 2.6255 running_gen_loss: 8.9757:  23%|█████████▌                            epoch: 4 step: 18005 running_warp_loss: 2.6255 running_gen_loss: 8.9757:  23%|█████████▌                            epoch: 4 step: 18006 running_warp_loss: 2.6252 running_gen_loss: 8.9755:  23%|█████████▌                            epoch: 4 step: 18006 running_warp_loss: 2.6252 running_gen_loss: 8.9755:  23%|█████████▌                            epoch: 4 step: 18007 running_warp_loss: 2.6250 running_gen_loss: 8.9758:  23%|█████████▌                            epoch: 4 step: 18007 running_warp_loss: 2.6250 running_gen_loss: 8.9758:  23%|█████████▌                            epoch: 4 step: 18008 running_warp_loss: 2.6251 running_gen_loss: 8.9755:  23%|█████████▌                            epoch: 4 step: 18008 running_warp_loss: 2.6251 running_gen_loss: 8.9755:  23%|█████████▌                            epoch: 4 step: 18009 running_warp_loss: 2.6243 running_gen_loss: 8.9754:  23%|█████████▌                            epoch: 4 step: 18009 running_warp_loss: 2.6243 running_gen_loss: 8.9754:  23%|█████████▌                            epoch: 4 step: 18010 running_warp_loss: 2.6238 running_gen_loss: 8.9754:  23%|█████████▌                            epoch: 4 step: 18010 running_warp_loss: 2.6238 running_gen_loss: 8.9754:  23%|█████████▋                            epoch: 4 step: 18011 running_warp_loss: 2.6243 running_gen_loss: 8.9761:  23%|█████████▋                            epoch: 4 step: 18011 running_warp_loss: 2.6243 running_gen_loss: 8.9761:  24%|█████████▉                            epoch: 4 step: 18012 running_warp_loss: 2.6236 running_gen_loss: 8.9758:  24%|█████████▉                            epoch: 4 step: 18012 running_warp_loss: 2.6236 running_gen_loss: 8.9758:  24%|█████████▉                            epoch: 4 step: 18013 running_warp_loss: 2.6242 running_gen_loss: 8.9756:  24%|█████████▉                            epoch: 4 step: 18013 running_warp_loss: 2.6242 running_gen_loss: 8.9756:  24%|█████████▉                            epoch: 4 step: 18014 running_warp_loss: 2.6239 running_gen_loss: 8.9757:  24%|█████████▉                            epoch: 4 step: 18014 running_warp_loss: 2.6239 running_gen_loss: 8.9757:  24%|█████████▉                            epoch: 4 step: 18015 running_warp_loss: 2.6240 running_gen_loss: 8.9758:  24%|█████████▉                            epoch: 4 step: 18015 running_warp_loss: 2.6240 running_gen_loss: 8.9758:  24%|█████████▉                            epoch: 4 step: 18016 running_warp_loss: 2.6243 running_gen_loss: 8.9762:  24%|█████████▉                            epoch: 4 step: 18016 running_warp_loss: 2.6243 running_gen_loss: 8.9762:  24%|█████████▉                            epoch: 4 step: 18017 running_warp_loss: 2.6243 running_gen_loss: 8.9761:  24%|█████████▉                            epoch: 4 step: 18017 running_warp_loss: 2.6243 running_gen_loss: 8.9761:  24%|█████████▉                            epoch: 4 step: 18018 running_warp_loss: 2.6239 running_gen_loss: 8.9758:  24%|█████████▉                            epoch: 4 step: 18018 running_warp_loss: 2.6239 running_gen_loss: 8.9758:  24%|█████████▉                            epoch: 4 step: 18019 running_warp_loss: 2.6236 running_gen_loss: 8.9755:  24%|█████████▉                            epoch: 4 step: 18019 running_warp_loss: 2.6236 running_gen_loss: 8.9755:  24%|█████████▉                            epoch: 4 step: 18020 running_warp_loss: 2.6231 running_gen_loss: 8.9751:  24%|█████████▉                            epoch: 4 step: 18020 running_warp_loss: 2.6231 running_gen_loss: 8.9751:  24%|█████████▉                            epoch: 4 step: 18021 running_warp_loss: 2.6231 running_gen_loss: 8.9742:  24%|█████████▉                            epoch: 4 step: 18021 running_warp_loss: 2.6231 running_gen_loss: 8.9742:  24%|█████████▉                            epoch: 4 step: 18022 running_warp_loss: 2.6232 running_gen_loss: 8.9741:  24%|█████████▉                            epoch: 4 step: 18022 running_warp_loss: 2.6232 running_gen_loss: 8.9741:  24%|█████████▉                            epoch: 4 step: 18023 running_warp_loss: 2.6235 running_gen_loss: 8.9747:  24%|█████████▉                            epoch: 4 step: 18023 running_warp_loss: 2.6235 running_gen_loss: 8.9747:  24%|█████████▉                            epoch: 4 step: 18024 running_warp_loss: 2.6227 running_gen_loss: 8.9747:  24%|█████████▉                            epoch: 4 step: 18024 running_warp_loss: 2.6227 running_gen_loss: 8.9747:  24%|██████████                            epoch: 4 step: 18025 running_warp_loss: 2.6228 running_gen_loss: 8.9744:  24%|██████████                            epoch: 4 step: 18025 running_warp_loss: 2.6228 running_gen_loss: 8.9744:  24%|██████████                            epoch: 4 step: 18026 running_warp_loss: 2.6227 running_gen_loss: 8.9747:  24%|██████████                            epoch: 4 step: 18026 running_warp_loss: 2.6227 running_gen_loss: 8.9747:  24%|██████████                            epoch: 4 step: 18027 running_warp_loss: 2.6230 running_gen_loss: 8.9748:  24%|██████████                            epoch: 4 step: 18027 running_warp_loss: 2.6230 running_gen_loss: 8.9748:  24%|██████████                            epoch: 4 step: 18028 running_warp_loss: 2.6229 running_gen_loss: 8.9747:  24%|██████████                            epoch: 4 step: 18028 running_warp_loss: 2.6229 running_gen_loss: 8.9747:  24%|██████████                            epoch: 4 step: 18029 running_warp_loss: 2.6231 running_gen_loss: 8.9741:  24%|██████████                            epoch: 4 step: 18029 running_warp_loss: 2.6231 running_gen_loss: 8.9741:  24%|██████████                            epoch: 4 step: 18030 running_warp_loss: 2.6232 running_gen_loss: 8.9742:  24%|██████████                            epoch: 4 step: 18030 running_warp_loss: 2.6232 running_gen_loss: 8.9742:  24%|██████████                            epoch: 4 step: 18031 running_warp_loss: 2.6233 running_gen_loss: 8.9737:  24%|██████████                            epoch: 4 step: 18031 running_warp_loss: 2.6233 running_gen_loss: 8.9737:  24%|██████████                            epoch: 4 step: 18032 running_warp_loss: 2.6237 running_gen_loss: 8.9736:  24%|██████████                            epoch: 4 step: 18032 running_warp_loss: 2.6237 running_gen_loss: 8.9736:  24%|██████████                            epoch: 4 step: 18033 running_warp_loss: 2.6236 running_gen_loss: 8.9740:  24%|██████████                            epoch: 4 step: 18033 running_warp_loss: 2.6236 running_gen_loss: 8.9740:  24%|██████████                            epoch: 4 step: 18034 running_warp_loss: 2.6237 running_gen_loss: 8.9741:  24%|██████████                            epoch: 4 step: 18034 running_warp_loss: 2.6237 running_gen_loss: 8.9741:  24%|██████████                            epoch: 4 step: 18035 running_warp_loss: 2.6235 running_gen_loss: 8.9742:  24%|██████████                            epoch: 4 step: 18035 running_warp_loss: 2.6235 running_gen_loss: 8.9742:  24%|██████████                            epoch: 4 step: 18036 running_warp_loss: 2.6232 running_gen_loss: 8.9743:  24%|██████████                            epoch: 4 step: 18036 running_warp_loss: 2.6232 running_gen_loss: 8.9743:  24%|██████████                            epoch: 4 step: 18037 running_warp_loss: 2.6230 running_gen_loss: 8.9738:  24%|██████████                            epoch: 4 step: 18037 running_warp_loss: 2.6230 running_gen_loss: 8.9738:  24%|██████████▏                           epoch: 4 step: 18038 running_warp_loss: 2.6230 running_gen_loss: 8.9741:  24%|██████████▏                           epoch: 4 step: 18038 running_warp_loss: 2.6230 running_gen_loss: 8.9741:  24%|██████████▏                           epoch: 4 step: 18039 running_warp_loss: 2.6228 running_gen_loss: 8.9739:  24%|██████████▏                           epoch: 4 step: 18039 running_warp_loss: 2.6228 running_gen_loss: 8.9739:  24%|██████████▏                           epoch: 4 step: 18040 running_warp_loss: 2.6232 running_gen_loss: 8.9740:  24%|██████████▏                           epoch: 4 step: 18040 running_warp_loss: 2.6232 running_gen_loss: 8.9740:  24%|██████████▏                           epoch: 4 step: 18041 running_warp_loss: 2.6240 running_gen_loss: 8.9741:  24%|██████████▏                           epoch: 4 step: 18041 running_warp_loss: 2.6240 running_gen_loss: 8.9741:  24%|██████████▏                           epoch: 4 step: 18042 running_warp_loss: 2.6241 running_gen_loss: 8.9743:  24%|██████████▏                           epoch: 4 step: 18042 running_warp_loss: 2.6241 running_gen_loss: 8.9743:  24%|██████████▏                           epoch: 4 step: 18043 running_warp_loss: 2.6236 running_gen_loss: 8.9746:  24%|██████████▏                           epoch: 4 step: 18043 running_warp_loss: 2.6236 running_gen_loss: 8.9746:  24%|██████████▏                           epoch: 4 step: 18044 running_warp_loss: 2.6235 running_gen_loss: 8.9745:  24%|██████████▏                           epoch: 4 step: 18044 running_warp_loss: 2.6235 running_gen_loss: 8.9745:  24%|██████████▏                           epoch: 4 step: 18045 running_warp_loss: 2.6234 running_gen_loss: 8.9744:  24%|██████████▏                           epoch: 4 step: 18045 running_warp_loss: 2.6234 running_gen_loss: 8.9744:  24%|██████████▏                           epoch: 4 step: 18046 running_warp_loss: 2.6235 running_gen_loss: 8.9745:  24%|██████████▏                           epoch: 4 step: 18046 running_warp_loss: 2.6235 running_gen_loss: 8.9745:  24%|██████████▏                           epoch: 4 step: 18047 running_warp_loss: 2.6233 running_gen_loss: 8.9746:  24%|██████████▏                           epoch: 4 step: 18047 running_warp_loss: 2.6233 running_gen_loss: 8.9746:  24%|██████████▏                           epoch: 4 step: 18048 running_warp_loss: 2.6231 running_gen_loss: 8.9742:  24%|██████████▏                           epoch: 4 step: 18048 running_warp_loss: 2.6231 running_gen_loss: 8.9742:  24%|██████████▏                           epoch: 4 step: 18049 running_warp_loss: 2.6227 running_gen_loss: 8.9742:  24%|██████████▏                           epoch: 4 step: 18049 running_warp_loss: 2.6227 running_gen_loss: 8.9742:  24%|██████████▎                           epoch: 4 step: 18050 running_warp_loss: 2.6228 running_gen_loss: 8.9742:  24%|██████████▎                           epoch: 4 step: 18050 running_warp_loss: 2.6228 running_gen_loss: 8.9742:  24%|██████████▎                           epoch: 4 step: 18051 running_warp_loss: 2.6227 running_gen_loss: 8.9742:  24%|██████████▎                           epoch: 4 step: 18051 running_warp_loss: 2.6227 running_gen_loss: 8.9742:  24%|██████████▎                           epoch: 4 step: 18052 running_warp_loss: 2.6226 running_gen_loss: 8.9739:  24%|██████████▎                           epoch: 4 step: 18052 running_warp_loss: 2.6226 running_gen_loss: 8.9739:  24%|██████████▎                           epoch: 4 step: 18053 running_warp_loss: 2.6225 running_gen_loss: 8.9737:  24%|██████████▎                           epoch: 4 step: 18053 running_warp_loss: 2.6225 running_gen_loss: 8.9737:  25%|██████████▎                           epoch: 4 step: 18054 running_warp_loss: 2.6226 running_gen_loss: 8.9742:  25%|██████████▎                           epoch: 4 step: 18054 running_warp_loss: 2.6226 running_gen_loss: 8.9742:  25%|██████████▎                           epoch: 4 step: 18055 running_warp_loss: 2.6226 running_gen_loss: 8.9739:  25%|██████████▎                           epoch: 4 step: 18055 running_warp_loss: 2.6226 running_gen_loss: 8.9739:  25%|██████████▎                           epoch: 4 step: 18056 running_warp_loss: 2.6222 running_gen_loss: 8.9740:  25%|██████████▎                           epoch: 4 step: 18056 running_warp_loss: 2.6222 running_gen_loss: 8.9740:  25%|██████████▎                           epoch: 4 step: 18057 running_warp_loss: 2.6225 running_gen_loss: 8.9740:  25%|██████████▎                           epoch: 4 step: 18057 running_warp_loss: 2.6225 running_gen_loss: 8.9740:  25%|██████████▎                           epoch: 4 step: 18058 running_warp_loss: 2.6228 running_gen_loss: 8.9742:  25%|██████████▎                           epoch: 4 step: 18058 running_warp_loss: 2.6228 running_gen_loss: 8.9742:  25%|██████████▎                           epoch: 4 step: 18059 running_warp_loss: 2.6221 running_gen_loss: 8.9744:  25%|██████████▎                           epoch: 4 step: 18059 running_warp_loss: 2.6221 running_gen_loss: 8.9744:  25%|██████████▎                           epoch: 4 step: 18060 running_warp_loss: 2.6225 running_gen_loss: 8.9739:  25%|██████████▎                           epoch: 4 step: 18060 running_warp_loss: 2.6225 running_gen_loss: 8.9739:  25%|██████████▎                           epoch: 4 step: 18061 running_warp_loss: 2.6232 running_gen_loss: 8.9737:  25%|██████████▎                           epoch: 4 step: 18061 running_warp_loss: 2.6232 running_gen_loss: 8.9737:  25%|██████████▎                           epoch: 4 step: 18062 running_warp_loss: 2.6235 running_gen_loss: 8.9738:  25%|██████████▎                           epoch: 4 step: 18062 running_warp_loss: 2.6235 running_gen_loss: 8.9738:  25%|██████████▍                           epoch: 4 step: 18063 running_warp_loss: 2.6238 running_gen_loss: 8.9740:  25%|██████████▍                           epoch: 4 step: 18063 running_warp_loss: 2.6238 running_gen_loss: 8.9740:  25%|██████████▍                           epoch: 4 step: 18064 running_warp_loss: 2.6237 running_gen_loss: 8.9742:  25%|██████████▍                           epoch: 4 step: 18064 running_warp_loss: 2.6237 running_gen_loss: 8.9742:  25%|██████████▍                           epoch: 4 step: 18065 running_warp_loss: 2.6239 running_gen_loss: 8.9741:  25%|██████████▍                           epoch: 4 step: 18065 running_warp_loss: 2.6239 running_gen_loss: 8.9741:  25%|██████████▍                           epoch: 4 step: 18066 running_warp_loss: 2.6239 running_gen_loss: 8.9747:  25%|██████████▍                           epoch: 4 step: 18066 running_warp_loss: 2.6239 running_gen_loss: 8.9747:  25%|██████████▍                           epoch: 4 step: 18067 running_warp_loss: 2.6239 running_gen_loss: 8.9750:  25%|██████████▍                           epoch: 4 step: 18067 running_warp_loss: 2.6239 running_gen_loss: 8.9750:  25%|██████████▍                           epoch: 4 step: 18068 running_warp_loss: 2.6240 running_gen_loss: 8.9747:  25%|██████████▍                           epoch: 4 step: 18068 running_warp_loss: 2.6240 running_gen_loss: 8.9747:  25%|██████████▍                           epoch: 4 step: 18069 running_warp_loss: 2.6241 running_gen_loss: 8.9748:  25%|██████████▍                           epoch: 4 step: 18069 running_warp_loss: 2.6241 running_gen_loss: 8.9748:  25%|██████████▍                           epoch: 4 step: 18070 running_warp_loss: 2.6242 running_gen_loss: 8.9748:  25%|██████████▍                           epoch: 4 step: 18070 running_warp_loss: 2.6242 running_gen_loss: 8.9748:  25%|██████████▍                           epoch: 4 step: 18071 running_warp_loss: 2.6238 running_gen_loss: 8.9748:  25%|██████████▍                           epoch: 4 step: 18071 running_warp_loss: 2.6238 running_gen_loss: 8.9748:  25%|██████████▍                           epoch: 4 step: 18072 running_warp_loss: 2.6240 running_gen_loss: 8.9746:  25%|██████████▍                           epoch: 4 step: 18072 running_warp_loss: 2.6240 running_gen_loss: 8.9746:  25%|██████████▍                           epoch: 4 step: 18073 running_warp_loss: 2.6235 running_gen_loss: 8.9751:  25%|██████████▍                           epoch: 4 step: 18073 running_warp_loss: 2.6235 running_gen_loss: 8.9751:  25%|██████████▍                           epoch: 4 step: 18074 running_warp_loss: 2.6241 running_gen_loss: 8.9757:  25%|██████████▍                           epoch: 4 step: 18074 running_warp_loss: 2.6241 running_gen_loss: 8.9757:  25%|██████████▍                           epoch: 4 step: 18075 running_warp_loss: 2.6237 running_gen_loss: 8.9755:  25%|██████████▍                           epoch: 4 step: 18075 running_warp_loss: 2.6237 running_gen_loss: 8.9755:  25%|██████████▌                           epoch: 4 step: 18076 running_warp_loss: 2.6228 running_gen_loss: 8.9753:  25%|██████████▌                           epoch: 4 step: 18076 running_warp_loss: 2.6228 running_gen_loss: 8.9753:  25%|██████████▌                           epoch: 4 step: 18077 running_warp_loss: 2.6226 running_gen_loss: 8.9752:  25%|██████████▌                           epoch: 4 step: 18077 running_warp_loss: 2.6226 running_gen_loss: 8.9752:  25%|██████████▌                           epoch: 4 step: 18078 running_warp_loss: 2.6228 running_gen_loss: 8.9749:  25%|██████████▌                           epoch: 4 step: 18078 running_warp_loss: 2.6228 running_gen_loss: 8.9749:  25%|██████████▌                           epoch: 4 step: 18079 running_warp_loss: 2.6227 running_gen_loss: 8.9750:  25%|██████████▌                           epoch: 4 step: 18079 running_warp_loss: 2.6227 running_gen_loss: 8.9750:  25%|██████████▌                           epoch: 4 step: 18080 running_warp_loss: 2.6228 running_gen_loss: 8.9751:  25%|██████████▌                           epoch: 4 step: 18080 running_warp_loss: 2.6228 running_gen_loss: 8.9751:  25%|██████████▌                           epoch: 4 step: 18081 running_warp_loss: 2.6233 running_gen_loss: 8.9753:  25%|██████████▌                           epoch: 4 step: 18081 running_warp_loss: 2.6233 running_gen_loss: 8.9753:  25%|██████████▌                           epoch: 4 step: 18082 running_warp_loss: 2.6237 running_gen_loss: 8.9750:  25%|██████████▌                           epoch: 4 step: 18082 running_warp_loss: 2.6237 running_gen_loss: 8.9750:  25%|██████████▌                           epoch: 4 step: 18083 running_warp_loss: 2.6230 running_gen_loss: 8.9752:  25%|██████████▌                           epoch: 4 step: 18083 running_warp_loss: 2.6230 running_gen_loss: 8.9752:  25%|██████████▌                           epoch: 4 step: 18084 running_warp_loss: 2.6234 running_gen_loss: 8.9756:  25%|██████████▌                           epoch: 4 step: 18084 running_warp_loss: 2.6234 running_gen_loss: 8.9756:  25%|██████████▌                           epoch: 4 step: 18085 running_warp_loss: 2.6232 running_gen_loss: 8.9757:  25%|██████████▌                           epoch: 4 step: 18085 running_warp_loss: 2.6232 running_gen_loss: 8.9757:  25%|██████████▌                           epoch: 4 step: 18086 running_warp_loss: 2.6234 running_gen_loss: 8.9760:  25%|██████████▌                           epoch: 4 step: 18086 running_warp_loss: 2.6234 running_gen_loss: 8.9760:  25%|██████████▌                           epoch: 4 step: 18087 running_warp_loss: 2.6228 running_gen_loss: 8.9756:  25%|██████████▌                           epoch: 4 step: 18087 running_warp_loss: 2.6228 running_gen_loss: 8.9756:  25%|██████████▋                           epoch: 4 step: 18088 running_warp_loss: 2.6233 running_gen_loss: 8.9758:  25%|██████████▋                           epoch: 4 step: 18088 running_warp_loss: 2.6233 running_gen_loss: 8.9758:  25%|██████████▋                           epoch: 4 step: 18089 running_warp_loss: 2.6234 running_gen_loss: 8.9756:  25%|██████████▋                           epoch: 4 step: 18089 running_warp_loss: 2.6234 running_gen_loss: 8.9756:  25%|██████████▋                           epoch: 4 step: 18090 running_warp_loss: 2.6234 running_gen_loss: 8.9754:  25%|██████████▋                           epoch: 4 step: 18090 running_warp_loss: 2.6234 running_gen_loss: 8.9754:  25%|██████████▋                           epoch: 4 step: 18091 running_warp_loss: 2.6231 running_gen_loss: 8.9750:  25%|██████████▋                           epoch: 4 step: 18091 running_warp_loss: 2.6231 running_gen_loss: 8.9750:  25%|██████████▋                           epoch: 4 step: 18092 running_warp_loss: 2.6234 running_gen_loss: 8.9750:  25%|██████████▋                           epoch: 4 step: 18092 running_warp_loss: 2.6234 running_gen_loss: 8.9750:  25%|██████████▋                           epoch: 4 step: 18093 running_warp_loss: 2.6241 running_gen_loss: 8.9750:  25%|██████████▋                           epoch: 4 step: 18093 running_warp_loss: 2.6241 running_gen_loss: 8.9750:  25%|██████████▋                           epoch: 4 step: 18094 running_warp_loss: 2.6240 running_gen_loss: 8.9752:  25%|██████████▋                           epoch: 4 step: 18094 running_warp_loss: 2.6240 running_gen_loss: 8.9752:  25%|██████████▋                           epoch: 4 step: 18095 running_warp_loss: 2.6236 running_gen_loss: 8.9750:  25%|██████████▋                           epoch: 4 step: 18095 running_warp_loss: 2.6236 running_gen_loss: 8.9750:  25%|██████████▋                           epoch: 4 step: 18096 running_warp_loss: 2.6236 running_gen_loss: 8.9743:  25%|██████████▋                           epoch: 4 step: 18096 running_warp_loss: 2.6236 running_gen_loss: 8.9743:  26%|██████████▋                           epoch: 4 step: 18097 running_warp_loss: 2.6236 running_gen_loss: 8.9740:  26%|██████████▋                           epoch: 4 step: 18097 running_warp_loss: 2.6236 running_gen_loss: 8.9740:  26%|██████████▋                           epoch: 4 step: 18098 running_warp_loss: 2.6234 running_gen_loss: 8.9742:  26%|██████████▋                           epoch: 4 step: 18098 running_warp_loss: 2.6234 running_gen_loss: 8.9742:  26%|██████████▋                           epoch: 4 step: 18099 running_warp_loss: 2.6231 running_gen_loss: 8.9747:  26%|██████████▋                           epoch: 4 step: 18099 running_warp_loss: 2.6231 running_gen_loss: 8.9747:  26%|██████████▋                           epoch: 4 step: 18100 running_warp_loss: 2.6233 running_gen_loss: 8.9742:  26%|██████████▋                           epoch: 4 step: 18100 running_warp_loss: 2.6233 running_gen_loss: 8.9742:  26%|██████████▊                           epoch: 4 step: 18101 running_warp_loss: 2.6232 running_gen_loss: 8.9740:  26%|██████████▊                           epoch: 4 step: 18101 running_warp_loss: 2.6232 running_gen_loss: 8.9740:  26%|██████████▊                           epoch: 4 step: 18102 running_warp_loss: 2.6230 running_gen_loss: 8.9742:  26%|██████████▊                           epoch: 4 step: 18102 running_warp_loss: 2.6230 running_gen_loss: 8.9742:  26%|██████████▊                           epoch: 4 step: 18103 running_warp_loss: 2.6234 running_gen_loss: 8.9742:  26%|██████████▊                           epoch: 4 step: 18103 running_warp_loss: 2.6234 running_gen_loss: 8.9742:  26%|██████████▊                           epoch: 4 step: 18104 running_warp_loss: 2.6237 running_gen_loss: 8.9743:  26%|██████████▊                           epoch: 4 step: 18104 running_warp_loss: 2.6237 running_gen_loss: 8.9743:  26%|██████████▊                           epoch: 4 step: 18105 running_warp_loss: 2.6235 running_gen_loss: 8.9744:  26%|██████████▊                           epoch: 4 step: 18105 running_warp_loss: 2.6235 running_gen_loss: 8.9744:  26%|██████████▊                           epoch: 4 step: 18106 running_warp_loss: 2.6231 running_gen_loss: 8.9746:  26%|██████████▊                           epoch: 4 step: 18106 running_warp_loss: 2.6231 running_gen_loss: 8.9746:  26%|██████████▊                           epoch: 4 step: 18107 running_warp_loss: 2.6230 running_gen_loss: 8.9747:  26%|██████████▊                           epoch: 4 step: 18107 running_warp_loss: 2.6230 running_gen_loss: 8.9747:  26%|██████████▊                           epoch: 4 step: 18108 running_warp_loss: 2.6229 running_gen_loss: 8.9747:  26%|██████████▊                           epoch: 4 step: 18108 running_warp_loss: 2.6229 running_gen_loss: 8.9747:  26%|██████████▊                           epoch: 4 step: 18109 running_warp_loss: 2.6227 running_gen_loss: 8.9746:  26%|██████████▊                           epoch: 4 step: 18109 running_warp_loss: 2.6227 running_gen_loss: 8.9746:  26%|██████████▊                           epoch: 4 step: 18110 running_warp_loss: 2.6227 running_gen_loss: 8.9745:  26%|██████████▊                           epoch: 4 step: 18110 running_warp_loss: 2.6227 running_gen_loss: 8.9745:  26%|██████████▊                           epoch: 4 step: 18111 running_warp_loss: 2.6231 running_gen_loss: 8.9738:  26%|██████████▊                           epoch: 4 step: 18111 running_warp_loss: 2.6231 running_gen_loss: 8.9738:  26%|██████████▊                           epoch: 4 step: 18112 running_warp_loss: 2.6230 running_gen_loss: 8.9737:  26%|██████████▊                           epoch: 4 step: 18112 running_warp_loss: 2.6230 running_gen_loss: 8.9737:  26%|██████████▊                           epoch: 4 step: 18113 running_warp_loss: 2.6227 running_gen_loss: 8.9734:  26%|██████████▊                           epoch: 4 step: 18113 running_warp_loss: 2.6227 running_gen_loss: 8.9734:  26%|██████████▉                           epoch: 4 step: 18114 running_warp_loss: 2.6225 running_gen_loss: 8.9736:  26%|██████████▉                           epoch: 4 step: 18114 running_warp_loss: 2.6225 running_gen_loss: 8.9736:  26%|██████████▉                           epoch: 4 step: 18115 running_warp_loss: 2.6226 running_gen_loss: 8.9734:  26%|██████████▉                           epoch: 4 step: 18115 running_warp_loss: 2.6226 running_gen_loss: 8.9734:  26%|██████████▉                           epoch: 4 step: 18116 running_warp_loss: 2.6225 running_gen_loss: 8.9734:  26%|██████████▉                           epoch: 4 step: 18116 running_warp_loss: 2.6225 running_gen_loss: 8.9734:  26%|██████████▉                           epoch: 4 step: 18117 running_warp_loss: 2.6222 running_gen_loss: 8.9735:  26%|██████████▉                           epoch: 4 step: 18117 running_warp_loss: 2.6222 running_gen_loss: 8.9735:  26%|██████████▉                           epoch: 4 step: 18118 running_warp_loss: 2.6217 running_gen_loss: 8.9736:  26%|██████████▉                           epoch: 4 step: 18118 running_warp_loss: 2.6217 running_gen_loss: 8.9736:  26%|██████████▉                           epoch: 4 step: 18119 running_warp_loss: 2.6216 running_gen_loss: 8.9735:  26%|██████████▉                           epoch: 4 step: 18119 running_warp_loss: 2.6216 running_gen_loss: 8.9735:  26%|██████████▉                           epoch: 4 step: 18120 running_warp_loss: 2.6212 running_gen_loss: 8.9742:  26%|██████████▉                           epoch: 4 step: 18120 running_warp_loss: 2.6212 running_gen_loss: 8.9742:  26%|██████████▉                           epoch: 4 step: 18121 running_warp_loss: 2.6216 running_gen_loss: 8.9747:  26%|██████████▉                           epoch: 4 step: 18121 running_warp_loss: 2.6216 running_gen_loss: 8.9747:  26%|██████████▉                           epoch: 4 step: 18122 running_warp_loss: 2.6220 running_gen_loss: 8.9754:  26%|██████████▉                           epoch: 4 step: 18122 running_warp_loss: 2.6220 running_gen_loss: 8.9754:  26%|██████████▉                           epoch: 4 step: 18123 running_warp_loss: 2.6217 running_gen_loss: 8.9752:  26%|██████████▉                           epoch: 4 step: 18123 running_warp_loss: 2.6217 running_gen_loss: 8.9752:  26%|██████████▉                           epoch: 4 step: 18124 running_warp_loss: 2.6219 running_gen_loss: 8.9755:  26%|██████████▉                           epoch: 4 step: 18124 running_warp_loss: 2.6219 running_gen_loss: 8.9755:  26%|██████████▉                           epoch: 4 step: 18125 running_warp_loss: 2.6215 running_gen_loss: 8.9756:  26%|██████████▉                           epoch: 4 step: 18125 running_warp_loss: 2.6215 running_gen_loss: 8.9756:  26%|███████████                           epoch: 4 step: 18126 running_warp_loss: 2.6215 running_gen_loss: 8.9758:  26%|███████████                           epoch: 4 step: 18126 running_warp_loss: 2.6215 running_gen_loss: 8.9758:  26%|███████████                           epoch: 4 step: 18127 running_warp_loss: 2.6217 running_gen_loss: 8.9758:  26%|███████████                           epoch: 4 step: 18127 running_warp_loss: 2.6217 running_gen_loss: 8.9758:  26%|███████████                           epoch: 4 step: 18128 running_warp_loss: 2.6211 running_gen_loss: 8.9764:  26%|███████████                           epoch: 4 step: 18128 running_warp_loss: 2.6211 running_gen_loss: 8.9764:  26%|███████████                           epoch: 4 step: 18129 running_warp_loss: 2.6211 running_gen_loss: 8.9762:  26%|███████████                           epoch: 4 step: 18129 running_warp_loss: 2.6211 running_gen_loss: 8.9762:  26%|███████████                           epoch: 4 step: 18130 running_warp_loss: 2.6212 running_gen_loss: 8.9764:  26%|███████████                           epoch: 4 step: 18130 running_warp_loss: 2.6212 running_gen_loss: 8.9764:  26%|███████████                           epoch: 4 step: 18131 running_warp_loss: 2.6210 running_gen_loss: 8.9765:  26%|███████████                           epoch: 4 step: 18131 running_warp_loss: 2.6210 running_gen_loss: 8.9765:  26%|███████████                           epoch: 4 step: 18132 running_warp_loss: 2.6212 running_gen_loss: 8.9768:  26%|███████████                           epoch: 4 step: 18132 running_warp_loss: 2.6212 running_gen_loss: 8.9768:  26%|███████████                           epoch: 4 step: 18133 running_warp_loss: 2.6212 running_gen_loss: 8.9766:  26%|███████████                           epoch: 4 step: 18133 running_warp_loss: 2.6212 running_gen_loss: 8.9766:  26%|███████████                           epoch: 4 step: 18134 running_warp_loss: 2.6212 running_gen_loss: 8.9767:  26%|███████████                           epoch: 4 step: 18134 running_warp_loss: 2.6212 running_gen_loss: 8.9767:  26%|███████████                           epoch: 4 step: 18135 running_warp_loss: 2.6214 running_gen_loss: 8.9767:  26%|███████████                           epoch: 4 step: 18135 running_warp_loss: 2.6214 running_gen_loss: 8.9767:  26%|███████████                           epoch: 4 step: 18136 running_warp_loss: 2.6214 running_gen_loss: 8.9768:  26%|███████████                           epoch: 4 step: 18136 running_warp_loss: 2.6214 running_gen_loss: 8.9768:  26%|███████████                           epoch: 4 step: 18137 running_warp_loss: 2.6217 running_gen_loss: 8.9772:  26%|███████████                           epoch: 4 step: 18137 running_warp_loss: 2.6217 running_gen_loss: 8.9772:  26%|███████████                           epoch: 4 step: 18138 running_warp_loss: 2.6215 running_gen_loss: 8.9771:  26%|███████████                           epoch: 4 step: 18138 running_warp_loss: 2.6215 running_gen_loss: 8.9771:  26%|███████████▏                          epoch: 4 step: 18139 running_warp_loss: 2.6213 running_gen_loss: 8.9773:  26%|███████████▏                          epoch: 4 step: 18139 running_warp_loss: 2.6213 running_gen_loss: 8.9773:  27%|███████████▏                          epoch: 4 step: 18140 running_warp_loss: 2.6214 running_gen_loss: 8.9774:  27%|███████████▏                          epoch: 4 step: 18140 running_warp_loss: 2.6214 running_gen_loss: 8.9774:  27%|███████████▏                          epoch: 4 step: 18141 running_warp_loss: 2.6206 running_gen_loss: 8.9772:  27%|███████████▏                          epoch: 4 step: 18141 running_warp_loss: 2.6206 running_gen_loss: 8.9772:  27%|███████████▏                          epoch: 4 step: 18142 running_warp_loss: 2.6214 running_gen_loss: 8.9770:  27%|███████████▏                          epoch: 4 step: 18142 running_warp_loss: 2.6214 running_gen_loss: 8.9770:  27%|███████████▏                          epoch: 4 step: 18143 running_warp_loss: 2.6210 running_gen_loss: 8.9764:  27%|███████████▏                          epoch: 4 step: 18143 running_warp_loss: 2.6210 running_gen_loss: 8.9764:  27%|███████████▏                          epoch: 4 step: 18144 running_warp_loss: 2.6214 running_gen_loss: 8.9767:  27%|███████████▏                          epoch: 4 step: 18144 running_warp_loss: 2.6214 running_gen_loss: 8.9767:  27%|███████████▏                          epoch: 4 step: 18145 running_warp_loss: 2.6211 running_gen_loss: 8.9764:  27%|███████████▏                          epoch: 4 step: 18145 running_warp_loss: 2.6211 running_gen_loss: 8.9764:  27%|███████████▏                          epoch: 4 step: 18146 running_warp_loss: 2.6207 running_gen_loss: 8.9759:  27%|███████████▏                          epoch: 4 step: 18146 running_warp_loss: 2.6207 running_gen_loss: 8.9759:  27%|███████████▏                          epoch: 4 step: 18147 running_warp_loss: 2.6210 running_gen_loss: 8.9764:  27%|███████████▏                          epoch: 4 step: 18147 running_warp_loss: 2.6210 running_gen_loss: 8.9764:  27%|███████████▏                          epoch: 4 step: 18148 running_warp_loss: 2.6212 running_gen_loss: 8.9763:  27%|███████████▏                          epoch: 4 step: 18148 running_warp_loss: 2.6212 running_gen_loss: 8.9763:  27%|███████████▏                          epoch: 4 step: 18149 running_warp_loss: 2.6211 running_gen_loss: 8.9759:  27%|███████████▏                          epoch: 4 step: 18149 running_warp_loss: 2.6211 running_gen_loss: 8.9759:  27%|███████████▏                          epoch: 4 step: 18150 running_warp_loss: 2.6216 running_gen_loss: 8.9757:  27%|███████████▏                          epoch: 4 step: 18150 running_warp_loss: 2.6216 running_gen_loss: 8.9757:  27%|███████████▏                          epoch: 4 step: 18151 running_warp_loss: 2.6215 running_gen_loss: 8.9756:  27%|███████████▏                          epoch: 4 step: 18151 running_warp_loss: 2.6215 running_gen_loss: 8.9756:  27%|███████████▎                          epoch: 4 step: 18152 running_warp_loss: 2.6214 running_gen_loss: 8.9757:  27%|███████████▎                          epoch: 4 step: 18152 running_warp_loss: 2.6214 running_gen_loss: 8.9757:  27%|███████████▎                          epoch: 4 step: 18153 running_warp_loss: 2.6207 running_gen_loss: 8.9760:  27%|███████████▎                          epoch: 4 step: 18153 running_warp_loss: 2.6207 running_gen_loss: 8.9760:  27%|███████████▎                          epoch: 4 step: 18154 running_warp_loss: 2.6207 running_gen_loss: 8.9756:  27%|███████████▎                          epoch: 4 step: 18154 running_warp_loss: 2.6207 running_gen_loss: 8.9756:  27%|███████████▎                          epoch: 4 step: 18155 running_warp_loss: 2.6208 running_gen_loss: 8.9760:  27%|███████████▎                          epoch: 4 step: 18155 running_warp_loss: 2.6208 running_gen_loss: 8.9760:  27%|███████████▎                          epoch: 4 step: 18156 running_warp_loss: 2.6204 running_gen_loss: 8.9763:  27%|███████████▎                          epoch: 4 step: 18156 running_warp_loss: 2.6204 running_gen_loss: 8.9763:  27%|███████████▎                          epoch: 4 step: 18157 running_warp_loss: 2.6206 running_gen_loss: 8.9762:  27%|███████████▎                          epoch: 4 step: 18157 running_warp_loss: 2.6206 running_gen_loss: 8.9762:  27%|███████████▎                          epoch: 4 step: 18158 running_warp_loss: 2.6200 running_gen_loss: 8.9766:  27%|███████████▎                          epoch: 4 step: 18158 running_warp_loss: 2.6200 running_gen_loss: 8.9766:  27%|███████████▎                          epoch: 4 step: 18159 running_warp_loss: 2.6200 running_gen_loss: 8.9767:  27%|███████████▎                          epoch: 4 step: 18159 running_warp_loss: 2.6200 running_gen_loss: 8.9767:  27%|███████████▎                          epoch: 4 step: 18160 running_warp_loss: 2.6207 running_gen_loss: 8.9770:  27%|███████████▎                          epoch: 4 step: 18160 running_warp_loss: 2.6207 running_gen_loss: 8.9770:  27%|███████████▎                          epoch: 4 step: 18161 running_warp_loss: 2.6206 running_gen_loss: 8.9770:  27%|███████████▎                          epoch: 4 step: 18161 running_warp_loss: 2.6206 running_gen_loss: 8.9770:  27%|███████████▎                          epoch: 4 step: 18162 running_warp_loss: 2.6212 running_gen_loss: 8.9770:  27%|███████████▎                          epoch: 4 step: 18162 running_warp_loss: 2.6212 running_gen_loss: 8.9770:  27%|███████████▎                          epoch: 4 step: 18163 running_warp_loss: 2.6213 running_gen_loss: 8.9769:  27%|███████████▎                          epoch: 4 step: 18163 running_warp_loss: 2.6213 running_gen_loss: 8.9769:  27%|███████████▍                          epoch: 4 step: 18164 running_warp_loss: 2.6215 running_gen_loss: 8.9767:  27%|███████████▍                          epoch: 4 step: 18164 running_warp_loss: 2.6215 running_gen_loss: 8.9767:  27%|███████████▍                          epoch: 4 step: 18165 running_warp_loss: 2.6215 running_gen_loss: 8.9761:  27%|███████████▍                          epoch: 4 step: 18165 running_warp_loss: 2.6215 running_gen_loss: 8.9761:  27%|███████████▍                          epoch: 4 step: 18166 running_warp_loss: 2.6213 running_gen_loss: 8.9754:  27%|███████████▍                          epoch: 4 step: 18166 running_warp_loss: 2.6213 running_gen_loss: 8.9754:  27%|███████████▍                          epoch: 4 step: 18167 running_warp_loss: 2.6216 running_gen_loss: 8.9756:  27%|███████████▍                          epoch: 4 step: 18167 running_warp_loss: 2.6216 running_gen_loss: 8.9756:  27%|███████████▍                          epoch: 4 step: 18168 running_warp_loss: 2.6217 running_gen_loss: 8.9751:  27%|███████████▍                          epoch: 4 step: 18168 running_warp_loss: 2.6217 running_gen_loss: 8.9751:  27%|███████████▍                          epoch: 4 step: 18169 running_warp_loss: 2.6220 running_gen_loss: 8.9749:  27%|███████████▍                          epoch: 4 step: 18169 running_warp_loss: 2.6220 running_gen_loss: 8.9749:  27%|███████████▍                          epoch: 4 step: 18201 running_warp_loss: 2.6226 running_gen_loss: 8.9742:  28%|███████████▋                          epoch: 4 step: 18201 running_warp_loss: 2.6226 running_gen_loss: 8.9742:  28%|███████████▊                          epoch: 4 step: 18202 running_warp_loss: 2.6228 running_gen_loss: 8.9739:  28%|███████████▊                          epoch: 4 step: 18202 running_warp_loss: 2.6228 running_gen_loss: 8.9739:  28%|███████████▊                          epoch: 4 step: 18203 running_warp_loss: 2.6226 running_gen_loss: 8.9741:  28%|███████████▊                          epoch: 4 step: 18203 running_warp_loss: 2.6226 running_gen_loss: 8.9741:  28%|███████████▊                          epoch: 4 step: 18204 running_warp_loss: 2.6231 running_gen_loss: 8.9736:  28%|███████████▊                          epoch: 4 step: 18204 running_warp_loss: 2.6231 running_gen_loss: 8.9736:  28%|███████████▊                          epoch: 4 step: 18205 running_warp_loss: 2.6234 running_gen_loss: 8.9737:  28%|███████████▊                          epoch: 4 step: 18205 running_warp_loss: 2.6234 running_gen_loss: 8.9737:  28%|███████████▊                          epoch: 4 step: 18206 running_warp_loss: 2.6235 running_gen_loss: 8.9743:  28%|███████████▊                          epoch: 4 step: 18206 running_warp_loss: 2.6235 running_gen_loss: 8.9743:  28%|███████████▊                          epoch: 4 step: 18207 running_warp_loss: 2.6236 running_gen_loss: 8.9750:  28%|███████████▊                          epoch: 4 step: 18207 running_warp_loss: 2.6236 running_gen_loss: 8.9750:  28%|███████████▊                          epoch: 4 step: 19499 running_warp_loss: 2.6203 running_gen_loss: 8.9646:  58%|████████████████████████▌                 | 2488/4253 [16:14<10:10,  2.89it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_4_checkpoint_step000019500.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:47<00:00,  1.02it/s]
+psnr 13.177 ssim 0.328 fid 399.126█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:46<00:00,  1.04it/s]
+eval_warp_loss : 2.462923628474594 eval_gen_loss 9.042671019877863 global_step: 19500
+epoch: 4 step: 20999 running_warp_loss: 2.6107 running_gen_loss: 8.9564:  94%|███████████████████████████████████████▍  | 3988/4253 [26:42<01:31,  2.89it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_4_checkpoint_step000021000.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.01s/it]
+psnr 13.283 ssim 0.332 fid 403.899█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.03it/s]
+eval_warp_loss : 2.508167498702303 eval_gen_loss 9.002482685474082 global_step: 21000
+epoch: 4 step: 21264 running_warp_loss: 2.6097 running_gen_loss: 8.9565: 100%|██████████████████████████████████████████| 4253/4253 [30:03<00:00,  2.36it/s]
+epoch: 5 step: 22499 running_warp_loss: 2.6232 running_gen_loss: 8.9517:  29%|█████████████████▏                                         | 1235/4253 [07:02<17:06,  2.94it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_5_checkpoint_step000022500.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:47<00:00,  1.01it/s]
+psnr 13.220 ssim 0.328 fid 403.850█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:47<00:00,  1.07it/s]
+eval_warp_loss : 2.500096310169325 eval_gen_loss 9.030150605997909 global_step: 22500
+epoch: 5 step: 23999 running_warp_loss: 2.6074 running_gen_loss: 8.9555:  64%|█████████████████████████████████████▉                     | 2735/4253 [17:24<08:39,  2.92it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_5_checkpoint_step000024000.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.01s/it]
+psnr 13.113 ssim 0.325 fid 405.018█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.01it/s]
+eval_warp_loss : 2.414485601110196 eval_gen_loss 9.042822216628888 global_step: 24000
+epoch: 5 step: 25499 running_warp_loss: 2.6098 running_gen_loss: 8.9563: 100%|██████████████████████████████████████████████████████████▊| 4235/4253 [27:48<00:06,  2.91it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_5_checkpoint_step000025500.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.01s/it]
+psnr 13.281 ssim 0.333 fid 405.264█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.05it/s]
+eval_warp_loss : 2.463862101966088 eval_gen_loss 8.988268353523464 global_step: 25500
+epoch: 5 step: 25517 running_warp_loss: 2.6097 running_gen_loss: 8.9561: 100%|███████████████████████████████████████████████████████████| 4253/4253 [29:44<00:00,  2.38it/s]
+epoch: 6 step: 26999 running_warp_loss: 2.5916 running_gen_loss: 8.9579:  35%|████████████████████▌                                      | 1482/4253 [09:16<15:42,  2.94it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_6_checkpoint_step000027000.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:51<00:00,  1.02s/it]
+psnr 13.258 ssim 0.330 fid 405.334█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.09s/it]
+eval_warp_loss : 2.4587600887368577 eval_gen_loss 9.07705707725035 global_step: 27000
+epoch: 6 step: 28499 running_warp_loss: 2.5893 running_gen_loss: 8.9557:  70%|█████████████████████████████████████████▎                 | 2982/4253 [19:39<07:10,  2.96it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_6_checkpoint_step000028500.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [02:03<00:00,  1.14s/it]
+psnr 13.265 ssim 0.332 fid 403.019█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [02:03<00:00,  1.40s/it]
+eval_warp_loss : 2.461678179032212 eval_gen_loss 8.980296703653599 global_step: 28500
+epoch: 6 step: 29770 running_warp_loss: 2.5828 running_gen_loss: 8.9556: 100%|███████████████████████████████████████████████████████████| 4253/4253 [29:16<00:00,  2.42it/s]
+epoch: 7 step: 29999 running_warp_loss: 2.5806 running_gen_loss: 8.9730:   5%|███▏                                                        | 229/4253 [01:18<23:10,  2.89it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_7_checkpoint_step000030000.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.01s/it]
+psnr 13.252 ssim 0.333 fid 405.512█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.01it/s]
+eval_warp_loss : 2.4332519616555732 eval_gen_loss 8.98521733065264 global_step: 30000
+epoch: 7 step: 31499 running_warp_loss: 2.5848 running_gen_loss: 8.9752:  41%|███████████████████████▉                                   | 1729/4253 [11:48<14:31,  2.90it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_7_checkpoint_step000031500.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:48<00:00,  1.01it/s]
+psnr 13.254 ssim 0.332 fid 406.040█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:48<00:00,  1.09s/it]
+eval_warp_loss : 2.4710256375304054 eval_gen_loss 9.028992127934726 global_step: 31500
+epoch: 7 step: 32999 running_warp_loss: 2.5826 running_gen_loss: 8.9695:  76%|████████████████████████████████████████████▊              | 3229/4253 [22:17<05:53,  2.90it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_7_checkpoint_step000033000.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.02s/it]
+psnr 13.186 ssim 0.329 fid 406.954█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.04s/it]
+eval_warp_loss : 2.412943006655492 eval_gen_loss 9.011410004502043 global_step: 33000
+epoch: 7 step: 34023 running_warp_loss: 2.5888 running_gen_loss: 8.9611: 100%|███████████████████████████████████████████████████████████| 4253/4253 [30:02<00:00,  2.36it/s]
+epoch: 8 step: 34499 running_warp_loss: 2.5626 running_gen_loss: 8.9625:  11%|██████▋                                                     | 476/4253 [02:44<21:42,  2.90it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_8_checkpoint_step000034500.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:48<00:00,  1.01it/s]
+psnr 13.287 ssim 0.331 fid 407.356█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:48<00:00,  1.06it/s]
+eval_warp_loss : 2.397153506585217 eval_gen_loss 9.043943825118038 global_step: 34500
+epoch: 8 step: 35999 running_warp_loss: 2.5661 running_gen_loss: 8.9462:  46%|███████████████████████████▍                               | 1976/4253 [13:12<13:06,  2.89it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_8_checkpoint_step000036000.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.01s/it]
+psnr 13.149 ssim 0.325 fid 409.731█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.01s/it]
+eval_warp_loss : 2.4157053866517653 eval_gen_loss 9.039141226252285 global_step: 36000
+epoch: 8 step: 37499 running_warp_loss: 2.5609 running_gen_loss: 8.9586:  82%|████████████████████████████████████████████████▏          | 3476/4253 [23:41<04:30,  2.87it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_8_checkpoint_step000037500.pth
+Evaluating model for 1 epochs
+                                                                                                                                                                            ^ 87%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                 | 95/109 [01:39<00:14,  1.04s/it]
+epoch: 8 step: 37499 running_warp_loss: 2.5609 running_gen_loss: 8.9586:  82%|████████████████████████████████████████████████▏          | 3476/4253 [25:20<05:39,  2.29it/s]
+Traceback (most recent call last):
+  File "train_video_renderer.py", line 386, in <module>
+    evaluate(model, val_data_loader)
+  File "train_video_renderer.py", line 282, in evaluate
+    psnr, ssim, fid = compute_generation_quality(gt, generated_img)
+  File "train_video_renderer.py", line 227, in compute_generation_quality
+    fid = fid_metric.compute_metric(pd_feats, gt_feats).item()
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/piq/fid.py", line 171, in compute_metric
+    score = _compute_fid(mu_x, sigma_x, mu_y, sigma_y)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/piq/fid.py", line 76, in _compute_fid
+    covmean, _ = _sqrtm_newton_schulz(sigma1.mm(sigma2))
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/piq/fid.py", line 52, in _sqrtm_newton_schulz
+    if torch.isclose(error, torch.tensor([0.], device=error.device, dtype=error.dtype), atol=1e-5):
+KeyboardInterrupt
+
+(myenv) vila@vila-lab-c1:~/Desktop/Sovanvichea/Land mark - test/IP_LAP$ CUDA_VISIBLE_DEVICES=0 python train_video_renderer.py   --sketch_root data_root/lrs2_sketch   --face_img_root data_root/lrs2_face   --audio_root data_root/lrs2_audio
+Project_name: renderer_T1_ref_N3
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/inception.py:43: FutureWarning: The default weight initialization of inception_v3 will be changed in future releases of torchvision. If you wish to keep the old behavior (which leads to long initialization times due to scipy/scipy#11299), please set init_weights=True.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Perceptual loss:
+        Mode: vgg19
+filter videos with min len of  25 ....
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 45839/45839 [00:03<00:00, 11899.55it/s]
+complete,with available vids:  42537 
+
+filter videos with min len of  25 ....
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1243/1243 [00:00<00:00, 18837.08it/s]
+complete,with available vids:  1097 
+
+  0%|                                                                                                                                               | 0/2126 [00:00<?, ?it/s]/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/functional.py:4296: UserWarning: Default grid_sample and affine_grid behavior has changed to align_corners=False since 1.3.0. Please specify align_corners=True if the old behavior is desired. See the documentation of grid_sample for details.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/loss.py:421: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  fake_tensor = self.Tensor(input.size()).fill_(self.fake_label)
+Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_0_checkpoint_step000000000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.29s/it]
+psnr 12.745 ssim 0.350 fid 404.656███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.20s/it]
+eval_warp_loss : 4.326145648956299 eval_gen_loss 8.997929361131456 global_step: 0
+epoch: 0 step: 47 running_warp_loss: 4.0415 running_gen_loss: 8.9231:   2%|█▍                                                              | 48/2126 [01:44<23:25,  1.48it/s]

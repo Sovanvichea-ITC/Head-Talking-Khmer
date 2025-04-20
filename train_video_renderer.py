@@ -28,8 +28,8 @@ finetune_path =None
 ref_N = 3
 T = 1
 print('Project_name:', Project_name)
-batch_size = 10 #96       #### batch_size
-batch_size_val = 10 #96   #### batch_size
+batch_size = 20 #96       #### batch_size
+batch_size_val = 20 #96   #### batch_size
 
 mel_step_size = 16  # 16
 fps = 25
