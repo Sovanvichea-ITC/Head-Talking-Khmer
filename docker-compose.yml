@@ -1,0 +1,6 @@
+
+services:
+  training:
+    build: .
+    volumes:
+      - .:/app/models

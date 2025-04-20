@@ -1,0 +1,17 @@
+checkpoints
+data_root
+data_root_test
+filelists
+myenv
+backup_code.zip
+tensorboard_runs
+__pycache__
+# .DS_Store
+# __pycache__/
+# .ipynb_checkpoints
+# .pytest_cache/
+# .coverage
+# .mypy_cache/
+# .pytest_cache/
+# .coverage.*
+# .hypothesis/

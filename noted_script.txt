@@ -1,0 +1,32 @@
+cd preprocess
+CUDA_VISIBLE_DEVICES=0 python preprocess_audio.py   --data_root ../data_root/main/   --out_r
+oot ../data_root/lrs2_audio/
+
+CUDA_VISIBLE_DEVICES=0 python preprocess_video.py \
+  --dataset_video_root ../data_root/main/ \
+  --output_sketch_root ../data_root/lrs2_sketch \
+  --output_face_root ../data_root/lrs2_face \
+  --output_landmark_root ../data_root/lrs2_landmarks
+
+
+cd ..
+
+CUDA_VISIBLE_DEVICES=0 python train_landmarks_generator.py \
+  --pre_audio_root data_root/lrs2_audio \
+  --landmarks_root data_root/lrs2_landmarks
+
+
+CUDA_VISIBLE_DEVICES=0 python train_video_renderer.py \
+  --sketch_root data_root/lrs2_sketch \
+  --face_img_root data_root/lrs2_face \
+  --audio_root data_root/lrs2_audio
+
+
+
+
+
+
+
+
+#test
+CUDA_VISIBLE_DEVICES=0 python inference_single_new_checkpoint.py
