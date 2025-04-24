@@ -24,9 +24,13 @@ CUDA_VISIBLE_DEVICES=0 python train_video_renderer.py \
 
 
 
+# test
+
+CUDA_VISIBLE_DEVICES=0 python inference_single.py
 
 
 
 
-#test
-CUDA_VISIBLE_DEVICES=0 python inference_single_new_checkpoint.py
+
+
+

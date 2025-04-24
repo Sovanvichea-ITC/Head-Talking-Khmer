@@ -1,0 +1,868 @@
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.01s/it]
+psnr 13.281 ssim 0.333 fid 405.264█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.05it/s]
+eval_warp_loss : 2.463862101966088 eval_gen_loss 8.988268353523464 global_step: 25500
+epoch: 5 step: 25517 running_warp_loss: 2.6097 running_gen_loss: 8.9561: 100%|███████████████████████████████████████████████████████████| 4253/4253 [29:44<00:00,  2.38it/s]
+epoch: 6 step: 26999 running_warp_loss: 2.5916 running_gen_loss: 8.9579:  35%|████████████████████▌                                      | 1482/4253 [09:16<15:42,  2.94it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_6_checkpoint_step000027000.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:51<00:00,  1.02s/it]
+psnr 13.258 ssim 0.330 fid 405.334█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.09s/it]
+eval_warp_loss : 2.4587600887368577 eval_gen_loss 9.07705707725035 global_step: 27000
+epoch: 6 step: 28499 running_warp_loss: 2.5893 running_gen_loss: 8.9557:  70%|█████████████████████████████████████████▎                 | 2982/4253 [19:39<07:10,  2.96it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_6_checkpoint_step000028500.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [02:03<00:00,  1.14s/it]
+psnr 13.265 ssim 0.332 fid 403.019█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [02:03<00:00,  1.40s/it]
+eval_warp_loss : 2.461678179032212 eval_gen_loss 8.980296703653599 global_step: 28500
+epoch: 6 step: 29770 running_warp_loss: 2.5828 running_gen_loss: 8.9556: 100%|███████████████████████████████████████████████████████████| 4253/4253 [29:16<00:00,  2.42it/s]
+epoch: 7 step: 29999 running_warp_loss: 2.5806 running_gen_loss: 8.9730:   5%|███▏                                                        | 229/4253 [01:18<23:10,  2.89it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_7_checkpoint_step000030000.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.01s/it]
+psnr 13.252 ssim 0.333 fid 405.512█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.01it/s]
+eval_warp_loss : 2.4332519616555732 eval_gen_loss 8.98521733065264 global_step: 30000
+epoch: 7 step: 31499 running_warp_loss: 2.5848 running_gen_loss: 8.9752:  41%|███████████████████████▉                                   | 1729/4253 [11:48<14:31,  2.90it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_7_checkpoint_step000031500.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:48<00:00,  1.01it/s]
+psnr 13.254 ssim 0.332 fid 406.040█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:48<00:00,  1.09s/it]
+eval_warp_loss : 2.4710256375304054 eval_gen_loss 9.028992127934726 global_step: 31500
+epoch: 7 step: 32999 running_warp_loss: 2.5826 running_gen_loss: 8.9695:  76%|████████████████████████████████████████████▊              | 3229/4253 [22:17<05:53,  2.90it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_7_checkpoint_step000033000.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.02s/it]
+psnr 13.186 ssim 0.329 fid 406.954█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:50<00:00,  1.04s/it]
+eval_warp_loss : 2.412943006655492 eval_gen_loss 9.011410004502043 global_step: 33000
+epoch: 7 step: 34023 running_warp_loss: 2.5888 running_gen_loss: 8.9611: 100%|███████████████████████████████████████████████████████████| 4253/4253 [30:02<00:00,  2.36it/s]
+epoch: 8 step: 34499 running_warp_loss: 2.5626 running_gen_loss: 8.9625:  11%|██████▋                                                     | 476/4253 [02:44<21:42,  2.90it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_8_checkpoint_step000034500.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:48<00:00,  1.01it/s]
+psnr 13.287 ssim 0.331 fid 407.356█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:48<00:00,  1.06it/s]
+eval_warp_loss : 2.397153506585217 eval_gen_loss 9.043943825118038 global_step: 34500
+epoch: 8 step: 35999 running_warp_loss: 2.5661 running_gen_loss: 8.9462:  46%|███████████████████████████▍                               | 1976/4253 [13:12<13:06,  2.89it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_8_checkpoint_step000036000.pth
+Evaluating model for 1 epochs
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.01s/it]
+psnr 13.149 ssim 0.325 fid 409.731█████████████████████████████████████████████████████████████████████████████████████████████████████████| 109/109 [01:49<00:00,  1.01s/it]
+eval_warp_loss : 2.4157053866517653 eval_gen_loss 9.039141226252285 global_step: 36000
+epoch: 8 step: 37499 running_warp_loss: 2.5609 running_gen_loss: 8.9586:  82%|████████████████████████████████████████████████▏          | 3476/4253 [23:41<04:30,  2.87it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_8_checkpoint_step000037500.pth
+Evaluating model for 1 epochs
+                                                                                                                                                                            ^ 87%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                 | 95/109 [01:39<00:14,  1.04s/it]
+epoch: 8 step: 37499 running_warp_loss: 2.5609 running_gen_loss: 8.9586:  82%|████████████████████████████████████████████████▏          | 3476/4253 [25:20<05:39,  2.29it/s]
+Traceback (most recent call last):
+  File "train_video_renderer.py", line 386, in <module>
+    evaluate(model, val_data_loader)
+  File "train_video_renderer.py", line 282, in evaluate
+    psnr, ssim, fid = compute_generation_quality(gt, generated_img)
+  File "train_video_renderer.py", line 227, in compute_generation_quality
+    fid = fid_metric.compute_metric(pd_feats, gt_feats).item()
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/piq/fid.py", line 171, in compute_metric
+    score = _compute_fid(mu_x, sigma_x, mu_y, sigma_y)
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/piq/fid.py", line 76, in _compute_fid
+    covmean, _ = _sqrtm_newton_schulz(sigma1.mm(sigma2))
+  File "/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/piq/fid.py", line 52, in _sqrtm_newton_schulz
+    if torch.isclose(error, torch.tensor([0.], device=error.device, dtype=error.dtype), atol=1e-5):
+KeyboardInterrupt
+
+(myenv) vila@vila-lab-c1:~/Desktop/Sovanvichea/Land mark - test/IP_LAP$ CUDA_VISIBLE_DEVICES=0 python train_video_renderer.py   --sketch_root data_root/lrs2_sketch   --face_img_root data_root/lrs2_face   --audio_root data_root/lrs2_audio
+Project_name: renderer_T1_ref_N3
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/inception.py:43: FutureWarning: The default weight initialization of inception_v3 will be changed in future releases of torchvision. If you wish to keep the old behavior (which leads to long initialization times due to scipy/scipy#11299), please set init_weights=True.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Perceptual loss:
+        Mode: vgg19
+filter videos with min len of  25 ....
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 45839/45839 [00:03<00:00, 11899.55it/s]
+complete,with available vids:  42537 
+
+filter videos with min len of  25 ....
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1243/1243 [00:00<00:00, 18837.08it/s]
+complete,with available vids:  1097 
+
+  0%|                                                                                                                                               | 0/2126 [00:00<?, ?it/s]/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/myenv/lib/python3.8/site-packages/torch/nn/functional.py:4296: UserWarning: Default grid_sample and affine_grid behavior has changed to align_corners=False since 1.3.0. Please specify align_corners=True if the old behavior is desired. See the documentation of grid_sample for details.
+  warnings.warn(
+/home/vila/Desktop/Sovanvichea/Land mark - test/IP_LAP/loss.py:421: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  fake_tensor = self.Tensor(input.size()).fill_(self.fake_label)
+Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_0_checkpoint_step000000000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.29s/it]
+psnr 12.745 ssim 0.350 fid 404.656███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.20s/it]
+eval_warp_loss : 4.326145648956299 eval_gen_loss 8.997929361131456 global_step: 0
+epoch: 0 step: 99 running_warp_loss: 3.7506 running_gen_loss: 8.9173:   5%|██▉                                                            | 100/2126 [02:19<22:46,  1.48it/s]Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.29s/it]
+psnr 12.654 ssim 0.344 fid 414.733███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.21s/it]
+eval_warp_loss : 3.0259557167689004 eval_gen_loss 8.948653044524017 global_step: 100
+epoch: 0 step: 499 running_warp_loss: 3.1988 running_gen_loss: 8.8951:  24%|██████████████▌                                               | 500/2126 [08:00<18:25,  1.47it/s]Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.25s/it]
+psnr 12.670 ssim 0.346 fid 409.723███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.25s/it]
+eval_warp_loss : 2.8033864939654314 eval_gen_loss 8.987885157267252 global_step: 500
+epoch: 0 step: 825 running_warp_loss: 3.1072 running_gen_loss: 8.8903:  39%|████████████████████████                                      | 826/2126 [12:48<14:39,  1.48it/s]epoch: 0 step: 827 running_warp_loss: 3.1066 running_gen_loss: 8.8904:  39%|████████████████████████▏                                     | 828/2126 [12:49<14:36,  1.48it/s]epoch: 0 step: 1499 running_warp_loss: 2.9967 running_gen_loss: 8.8968:  71%|██████████████████████████████████████████▎                 | 1500/2126 [20:24<07:02,  1.48it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_0_checkpoint_step000001500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:10<00:00,  1.30s/it]
+psnr 12.646 ssim 0.347 fid 413.150███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.25s/it]
+eval_warp_loss : 2.6575535756570323 eval_gen_loss 8.963392293011701 global_step: 1500
+epoch: 0 step: 2125 running_warp_loss: 2.9441 running_gen_loss: 8.8995: 100%|████████████████████████████████████████████████████████████| 2126/2126 [28:37<00:00,  1.24it/s]
+epoch: 1 step: 2999 running_warp_loss: 2.7797 running_gen_loss: 8.9074:  41%|█████████████████████████                                    | 874/2126 [10:39<14:05,  1.48it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_1_checkpoint_step000003000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.27s/it]
+psnr 12.603 ssim 0.346 fid 412.587███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.22s/it]
+eval_warp_loss : 2.517248778431504 eval_gen_loss 8.922117568828442 global_step: 3000
+epoch: 1 step: 4251 running_warp_loss: 2.7622 running_gen_loss: 8.9139: 100%|████████████████████████████████████████████████████████████| 2126/2126 [27:15<00:00,  1.30it/s]
+epoch: 2 step: 4499 running_warp_loss: 2.6688 running_gen_loss: 8.9237:  12%|███████                                                      | 248/2126 [02:46<20:46,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_2_checkpoint_step000004500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.26s/it]
+psnr 12.492 ssim 0.340 fid 413.515███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.24s/it]
+eval_warp_loss : 2.5826837574994124 eval_gen_loss 8.952514277564156 global_step: 4500
+epoch: 2 step: 5999 running_warp_loss: 2.6909 running_gen_loss: 8.9174:  82%|█████████████████████████████████████████████████▎          | 1748/2126 [20:32<04:10,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_2_checkpoint_step000006000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.27s/it]
+psnr 12.633 ssim 0.345 fid 411.054███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.20s/it]
+eval_warp_loss : 2.5805894467565746 eval_gen_loss 9.020934934969302 global_step: 6000
+epoch: 2 step: 6377 running_warp_loss: 2.6879 running_gen_loss: 8.9200: 100%|████████████████████████████████████████████████████████████| 2126/2126 [25:52<00:00,  1.37it/s]
+epoch: 3 step: 7499 running_warp_loss: 2.6538 running_gen_loss: 8.9030:  53%|███████████████████████████████▋                            | 1122/2126 [12:25<11:06,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_3_checkpoint_step000007500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.26s/it]
+psnr 12.586 ssim 0.342 fid 413.658███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.21s/it]
+eval_warp_loss : 2.55174696886981 eval_gen_loss 9.041752373730695 global_step: 7500
+epoch: 3 step: 8503 running_warp_loss: 2.6576 running_gen_loss: 8.9094: 100%|████████████████████████████████████████████████████████████| 2126/2126 [24:40<00:00,  1.44it/s]
+epoch: 4 step: 8999 running_warp_loss: 2.6462 running_gen_loss: 8.9296:  23%|██████████████▏                                              | 496/2126 [05:30<18:01,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_4_checkpoint_step000009000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.28s/it]
+psnr 12.652 ssim 0.347 fid 416.317███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.28s/it]
+eval_warp_loss : 2.513846922803808 eval_gen_loss 8.98293975547508 global_step: 9000
+epoch: 4 step: 10499 running_warp_loss: 2.6368 running_gen_loss: 8.9215:  94%|███████████████████████████████████████████████████████▍   | 1996/2126 [23:15<01:26,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_4_checkpoint_step000010500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.25s/it]
+psnr 12.694 ssim 0.345 fid 410.989███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.27s/it]
+eval_warp_loss : 2.4625102480252585 eval_gen_loss 9.000498859970659 global_step: 10500
+epoch: 4 step: 10629 running_warp_loss: 2.6387 running_gen_loss: 8.9209: 100%|███████████████████████████████████████████████████████████| 2126/2126 [25:50<00:00,  1.37it/s]
+epoch: 5 step: 11999 running_warp_loss: 2.6190 running_gen_loss: 8.9133:  64%|██████████████████████████████████████                     | 1370/2126 [15:10<08:22,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_5_checkpoint_step000012000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.29s/it]
+psnr 12.663 ssim 0.348 fid 416.510███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.19s/it]
+eval_warp_loss : 2.474514537387424 eval_gen_loss 8.944896185839617 global_step: 12000
+epoch: 5 step: 12755 running_warp_loss: 2.6191 running_gen_loss: 8.9075: 100%|███████████████████████████████████████████████████████████| 2126/2126 [24:55<00:00,  1.42it/s]
+epoch: 6 step: 13499 running_warp_loss: 2.6177 running_gen_loss: 8.9188:  35%|████████████████████▉                                       | 744/2126 [08:28<15:44,  1.46it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_6_checkpoint_step000013500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:11<00:00,  1.32s/it]
+psnr 12.691 ssim 0.344 fid 407.723███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:11<00:00,  1.33s/it]
+eval_warp_loss : 2.4644089098329895 eval_gen_loss 8.9979712344982 global_step: 13500
+epoch: 6 step: 14881 running_warp_loss: 2.6089 running_gen_loss: 8.9095: 100%|███████████████████████████████████████████████████████████| 2126/2126 [25:22<00:00,  1.40it/s]
+epoch: 7 step: 14999 running_warp_loss: 2.6322 running_gen_loss: 8.8969:   6%|███▎                                                        | 118/2126 [01:21<22:49,  1.47it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_7_checkpoint_step000015000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.28s/it]
+psnr 12.693 ssim 0.345 fid 414.076███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.30s/it]
+eval_warp_loss : 2.4418656494882374 eval_gen_loss 9.004506393715188 global_step: 15000
+epoch: 7 step: 16499 running_warp_loss: 2.5964 running_gen_loss: 8.9089:  76%|████████████████████████████████████████████▉              | 1618/2126 [19:07<05:37,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_7_checkpoint_step000016500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.27s/it]
+psnr 12.588 ssim 0.343 fid 414.350███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.29s/it]
+eval_warp_loss : 2.4236324672345764 eval_gen_loss 8.930381245083279 global_step: 16500
+epoch: 7 step: 17007 running_warp_loss: 2.5938 running_gen_loss: 8.9076: 100%|███████████████████████████████████████████████████████████| 2126/2126 [25:54<00:00,  1.37it/s]
+epoch: 8 step: 17999 running_warp_loss: 2.5840 running_gen_loss: 8.9193:  47%|███████████████████████████▉                                | 992/2126 [10:59<12:32,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_8_checkpoint_step000018000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.26s/it]
+psnr 12.553 ssim 0.342 fid 415.554███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.22s/it]
+eval_warp_loss : 2.427031962959855 eval_gen_loss 8.949857694131357 global_step: 18000
+epoch: 8 step: 19133 running_warp_loss: 2.5812 running_gen_loss: 8.9158: 100%|███████████████████████████████████████████████████████████| 2126/2126 [24:41<00:00,  1.44it/s]
+epoch: 9 step: 19499 running_warp_loss: 2.5720 running_gen_loss: 8.9040:  17%|██████████▎                                                 | 366/2126 [04:04<19:29,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_9_checkpoint_step000019500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.28s/it]
+psnr 12.689 ssim 0.343 fid 413.890███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.28s/it]
+eval_warp_loss : 2.4189822143978543 eval_gen_loss 8.979522404847321 global_step: 19500
+epoch: 9 step: 20999 running_warp_loss: 2.5699 running_gen_loss: 8.8998:  88%|███████████████████████████████████████████████████▊       | 1866/2126 [21:49<02:52,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_9_checkpoint_step000021000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.29s/it]
+psnr 12.596 ssim 0.344 fid 415.289███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.30s/it]
+eval_warp_loss : 2.4439960894761263 eval_gen_loss 8.969043890635172 global_step: 21000
+epoch: 9 step: 21259 running_warp_loss: 2.5699 running_gen_loss: 8.8998: 100%|███████████████████████████████████████████████████████████| 2126/2126 [25:52<00:00,  1.37it/s]
+epoch: 10 step: 22499 running_warp_loss: 2.5609 running_gen_loss: 8.9000:  58%|█████████████████████████████████▊                        | 1240/2126 [13:44<09:48,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_10_checkpoint_step000022500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.27s/it]
+psnr 12.688 ssim 0.344 fid 413.531███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.20s/it]
+eval_warp_loss : 2.4289753569497003 eval_gen_loss 8.975785273092765 global_step: 22500
+epoch: 10 step: 23385 running_warp_loss: 2.5635 running_gen_loss: 8.9049: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:41<00:00,  1.44it/s]
+epoch: 11 step: 23999 running_warp_loss: 2.5613 running_gen_loss: 8.9082:  29%|█████████████████                                          | 614/2126 [06:48<16:44,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_11_checkpoint_step000024000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.27s/it]
+psnr 12.684 ssim 0.342 fid 414.221███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.22s/it]
+eval_warp_loss : 2.3604884390477783 eval_gen_loss 8.97640014577795 global_step: 24000
+epoch: 11 step: 25499 running_warp_loss: 2.5610 running_gen_loss: 8.9128:  99%|█████████████████████████████████████████████████████████▋| 2114/2126 [24:33<00:07,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_11_checkpoint_step000025500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.24s/it]
+psnr 12.613 ssim 0.343 fid 417.281███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.23s/it]
+eval_warp_loss : 2.461996701028612 eval_gen_loss 8.965940952301025 global_step: 25500
+epoch: 11 step: 25511 running_warp_loss: 2.5611 running_gen_loss: 8.9133: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:48<00:00,  1.37it/s]
+epoch: 12 step: 26999 running_warp_loss: 2.5368 running_gen_loss: 8.9064:  70%|████████████████████████████████████████▌                 | 1488/2126 [16:29<07:04,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_12_checkpoint_step000027000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.28s/it]
+psnr 12.661 ssim 0.344 fid 412.559███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.31s/it]
+eval_warp_loss : 2.398886643074177 eval_gen_loss 8.947335755383527 global_step: 27000
+epoch: 12 step: 27637 running_warp_loss: 2.5408 running_gen_loss: 8.9004: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:43<00:00,  1.43it/s]
+epoch: 13 step: 28499 running_warp_loss: 2.5498 running_gen_loss: 8.9147:  41%|███████████████████████▉                                   | 862/2126 [09:34<14:00,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_13_checkpoint_step000028500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.26s/it]
+psnr 12.654 ssim 0.344 fid 413.339███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.22s/it]
+eval_warp_loss : 2.3829428597732827 eval_gen_loss 8.93699457027294 global_step: 28500
+epoch: 13 step: 29763 running_warp_loss: 2.5485 running_gen_loss: 8.9136: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:42<00:00,  1.43it/s]
+epoch: 14 step: 29999 running_warp_loss: 2.5305 running_gen_loss: 8.8923:  11%|██████▌                                                    | 236/2126 [02:37<20:54,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_14_checkpoint_step000030000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.28s/it]
+psnr 12.724 ssim 0.344 fid 414.511███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.22s/it]
+eval_warp_loss : 2.4248462937496327 eval_gen_loss 9.014595296647814 global_step: 30000
+epoch: 14 step: 31499 running_warp_loss: 2.5401 running_gen_loss: 8.9025:  82%|███████████████████████████████████████████████▎          | 1736/2126 [20:24<04:19,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_14_checkpoint_step000031500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.27s/it]
+psnr 12.719 ssim 0.343 fid 410.797███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.21s/it]
+eval_warp_loss : 2.3667784686441773 eval_gen_loss 8.991433956004956 global_step: 31500
+epoch: 14 step: 31889 running_warp_loss: 2.5398 running_gen_loss: 8.9028: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:52<00:00,  1.37it/s]
+epoch: 15 step: 32999 running_warp_loss: 2.5315 running_gen_loss: 8.9047:  52%|██████████████████████████████▎                           | 1110/2126 [12:17<11:14,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_15_checkpoint_step000033000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.25s/it]
+psnr 12.605 ssim 0.343 fid 413.899███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.23s/it]
+eval_warp_loss : 2.3583045579768993 eval_gen_loss 8.926506483996356 global_step: 33000
+epoch: 15 step: 34015 running_warp_loss: 2.5324 running_gen_loss: 8.9048: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:40<00:00,  1.44it/s]
+epoch: 16 step: 34499 running_warp_loss: 2.5353 running_gen_loss: 8.9160:  23%|█████████████▍                                             | 484/2126 [05:22<18:09,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_16_checkpoint_step000034500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.27s/it]
+psnr 12.566 ssim 0.340 fid 413.419███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.23s/it]
+eval_warp_loss : 2.3762872881359525 eval_gen_loss 8.97220445562292 global_step: 34500
+epoch: 16 step: 35999 running_warp_loss: 2.5262 running_gen_loss: 8.9085:  93%|██████████████████████████████████████████████████████▏   | 1984/2126 [23:07<01:34,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_16_checkpoint_step000036000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.28s/it]
+psnr 12.698 ssim 0.344 fid 415.180███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.17s/it]
+eval_warp_loss : 2.390235075244197 eval_gen_loss 8.945472134484184 global_step: 36000
+epoch: 16 step: 36141 running_warp_loss: 2.5253 running_gen_loss: 8.9074: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:51<00:00,  1.37it/s]
+epoch: 17 step: 37499 running_warp_loss: 2.5249 running_gen_loss: 8.9060:  64%|█████████████████████████████████████                     | 1358/2126 [15:02<08:29,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_17_checkpoint_step000037500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.25s/it]
+psnr 12.606 ssim 0.341 fid 412.464███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.37s/it]
+eval_warp_loss : 2.437674946255154 eval_gen_loss 8.980611589219835 global_step: 37500
+epoch: 17 step: 38267 running_warp_loss: 2.5230 running_gen_loss: 8.9072: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:40<00:00,  1.44it/s]
+epoch: 18 step: 38999 running_warp_loss: 2.5290 running_gen_loss: 8.9181:  34%|████████████████████▎                                      | 732/2126 [08:06<15:25,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_18_checkpoint_step000039000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.26s/it]
+psnr 12.542 ssim 0.338 fid 409.603███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.23s/it]
+eval_warp_loss : 2.3827398220698037 eval_gen_loss 8.969056005831119 global_step: 39000
+epoch: 18 step: 40393 running_warp_loss: 2.5226 running_gen_loss: 8.9050: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:40<00:00,  1.44it/s]
+epoch: 19 step: 40499 running_warp_loss: 2.5089 running_gen_loss: 8.9209:   5%|██▉                                                        | 106/2126 [01:11<22:21,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_19_checkpoint_step000040500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.28s/it]
+psnr 12.669 ssim 0.341 fid 412.328███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.20s/it]
+eval_warp_loss : 2.3506156382737338 eval_gen_loss 8.968037146109122 global_step: 40500
+epoch: 19 step: 41999 running_warp_loss: 2.5097 running_gen_loss: 8.8967:  76%|███████████████████████████████████████████▊              | 1606/2126 [18:57<05:45,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_19_checkpoint_step000042000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.27s/it]
+psnr 12.568 ssim 0.339 fid 413.473███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.28s/it]
+eval_warp_loss : 2.432468295097351 eval_gen_loss 8.960817019144693 global_step: 42000
+epoch: 19 step: 42519 running_warp_loss: 2.5131 running_gen_loss: 8.8967: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:51<00:00,  1.37it/s]
+epoch: 20 step: 43499 running_warp_loss: 2.5086 running_gen_loss: 8.8878:  46%|███████████████████████████▏                               | 980/2126 [10:51<12:40,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_20_checkpoint_step000043500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.26s/it]
+psnr 12.541 ssim 0.339 fid 414.377███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.23s/it]
+eval_warp_loss : 2.388547698656718 eval_gen_loss 8.978801921561912 global_step: 43500
+epoch: 20 step: 44645 running_warp_loss: 2.5060 running_gen_loss: 8.8987: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:41<00:00,  1.44it/s]
+epoch: 21 step: 44999 running_warp_loss: 2.5183 running_gen_loss: 8.8737:  17%|█████████▊                                                 | 354/2126 [03:55<19:37,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_21_checkpoint_step000045000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.26s/it]
+psnr 12.615 ssim 0.340 fid 413.735███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.23s/it]
+eval_warp_loss : 2.3596466029131853 eval_gen_loss 8.957181206455937 global_step: 45000
+epoch: 21 step: 46499 running_warp_loss: 2.5144 running_gen_loss: 8.9074:  87%|██████████████████████████████████████████████████▌       | 1854/2126 [21:40<03:00,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_21_checkpoint_step000046500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.27s/it]
+psnr 12.594 ssim 0.341 fid 413.701███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.20s/it]
+eval_warp_loss : 2.299904238294672 eval_gen_loss 8.913959874047173 global_step: 46500
+epoch: 21 step: 46771 running_warp_loss: 2.5147 running_gen_loss: 8.9069: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:49<00:00,  1.37it/s]
+epoch: 22 step: 47999 running_warp_loss: 2.4987 running_gen_loss: 8.8952:  58%|█████████████████████████████████▌                        | 1228/2126 [13:36<09:56,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_22_checkpoint_step000048000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:06<00:00,  1.23s/it]
+psnr 12.698 ssim 0.341 fid 414.350███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:06<00:00,  1.17s/it]
+eval_warp_loss : 2.390246484014723 eval_gen_loss 9.034529438725224 global_step: 48000
+epoch: 22 step: 48897 running_warp_loss: 2.4951 running_gen_loss: 8.9018: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:39<00:00,  1.44it/s]
+epoch: 23 step: 49499 running_warp_loss: 2.4951 running_gen_loss: 8.9029:  28%|████████████████▋                                          | 602/2126 [06:40<16:52,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_23_checkpoint_step000049500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.28s/it]
+psnr 12.733 ssim 0.342 fid 412.977███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.17s/it]
+eval_warp_loss : 2.410543938477834 eval_gen_loss 9.026905836882415 global_step: 49500
+epoch: 23 step: 50999 running_warp_loss: 2.4949 running_gen_loss: 8.9002:  99%|█████████████████████████████████████████████████████████▎| 2102/2126 [24:25<00:15,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_23_checkpoint_step000051000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:09<00:00,  1.28s/it]
+psnr 12.728 ssim 0.345 fid 412.410███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:08<00:00,  1.30s/it]
+eval_warp_loss : 2.406790867999748 eval_gen_loss 8.908694920716462 global_step: 51000
+epoch: 23 step: 51023 running_warp_loss: 2.4953 running_gen_loss: 8.9008: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:51<00:00,  1.37it/s]
+epoch: 24 step: 52499 running_warp_loss: 2.5064 running_gen_loss: 8.9005:  69%|████████████████████████████████████████▎                 | 1476/2126 [16:21<07:12,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_24_checkpoint_step000052500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.25s/it]
+psnr 12.595 ssim 0.339 fid 412.620███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.36s/it]
+eval_warp_loss : 2.383860150973002 eval_gen_loss 9.015666202262596 global_step: 52500
+epoch: 24 step: 53149 running_warp_loss: 2.5073 running_gen_loss: 8.9036: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:41<00:00,  1.44it/s]
+epoch: 25 step: 53999 running_warp_loss: 2.5016 running_gen_loss: 8.8970:  40%|███████████████████████▌                                   | 850/2126 [09:24<14:06,  1.51it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_25_checkpoint_step000054000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.25s/it]
+psnr 12.621 ssim 0.342 fid 415.222███████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [01:07<00:00,  1.18s/it]
+eval_warp_loss : 2.324022884722109 eval_gen_loss 8.928809625131112 global_step: 54000
+epoch: 25 step: 55275 running_warp_loss: 2.4998 running_gen_loss: 8.8985: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:40<00:00,  1.44it/s]
+epoch: 26 step: 55499 running_warp_loss: 2.5412 running_gen_loss: 3.3386:  11%|██████▏                                                    | 224/2126 [02:30<21:10,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_26_checkpoint_step000055500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:52<00:00,  1.03it/s]
+psnr 27.223 ssim 0.857 fid 56.780████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:52<00:00,  1.15it/s]
+eval_warp_loss : 2.321109511234142 eval_gen_loss 2.678728840969227 global_step: 55500
+epoch: 26 step: 56999 running_warp_loss: 2.5300 running_gen_loss: 2.3891:  81%|███████████████████████████████████████████████           | 1724/2126 [20:06<04:28,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_26_checkpoint_step000057000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:47<00:00,  1.15it/s]
+psnr 29.327 ssim 0.903 fid 39.533████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+eval_warp_loss : 2.3886869064083807 eval_gen_loss 1.9978181234112493 global_step: 57000
+epoch: 26 step: 57401 running_warp_loss: 2.5304 running_gen_loss: 2.3319: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:22<00:00,  1.40it/s]
+epoch: 27 step: 58499 running_warp_loss: 2.5264 running_gen_loss: 2.0398:  52%|█████████████████████████████▉                            | 1098/2126 [12:14<11:26,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_27_checkpoint_step000058500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:47<00:00,  1.15it/s]
+psnr 29.165 ssim 0.905 fid 37.458████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:47<00:00,  1.17it/s]
+eval_warp_loss : 2.3897524255293385 eval_gen_loss 1.9400512818936948 global_step: 58500
+epoch: 27 step: 59527 running_warp_loss: 2.5179 running_gen_loss: 2.0093: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:29<00:00,  1.45it/s]
+epoch: 28 step: 59999 running_warp_loss: 2.5186 running_gen_loss: 1.9623:  22%|█████████████                                              | 472/2126 [05:16<18:25,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_28_checkpoint_step000060000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:47<00:00,  1.14it/s]
+psnr 29.741 ssim 0.912 fid 35.066████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:47<00:00,  1.17it/s]
+eval_warp_loss : 2.359097436622337 eval_gen_loss 1.8558906250529819 global_step: 60000
+epoch: 28 step: 61499 running_warp_loss: 2.4993 running_gen_loss: 1.9319:  93%|█████████████████████████████████████████████████████▊    | 1972/2126 [22:46<01:42,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_28_checkpoint_step000061500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:47<00:00,  1.14it/s]
+psnr 29.749 ssim 0.913 fid 34.907████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:47<00:00,  1.16it/s]
+eval_warp_loss : 2.3924288617240057 eval_gen_loss 1.8355787793795268 global_step: 61500
+epoch: 28 step: 61653 running_warp_loss: 2.4989 running_gen_loss: 1.9303: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:17<00:00,  1.40it/s]
+epoch: 29 step: 62999 running_warp_loss: 2.5082 running_gen_loss: 1.9073:  63%|████████████████████████████████████▋                     | 1346/2126 [14:59<08:41,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_29_checkpoint_step000063000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+psnr 30.115 ssim 0.917 fid 33.591████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.14it/s]
+eval_warp_loss : 2.3413633395124367 eval_gen_loss 1.79204601932455 global_step: 63000
+epoch: 29 step: 63779 running_warp_loss: 2.5001 running_gen_loss: 1.8971: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 30 step: 64499 running_warp_loss: 2.4977 running_gen_loss: 1.8724:  34%|███████████████████▉                                       | 720/2126 [08:02<15:39,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_30_checkpoint_step000064500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+psnr 29.759 ssim 0.915 fid 33.877████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.19it/s]
+eval_warp_loss : 2.4198371525164 eval_gen_loss 1.8270215347961143 global_step: 64500
+epoch: 30 step: 65905 running_warp_loss: 2.4949 running_gen_loss: 1.8552: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 31 step: 65999 running_warp_loss: 2.5186 running_gen_loss: 1.8423:   4%|██▋                                                         | 94/2126 [01:03<22:37,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_31_checkpoint_step000066000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 30.101 ssim 0.919 fid 32.234████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.20it/s]
+eval_warp_loss : 2.365467466689922 eval_gen_loss 1.7449991945867185 global_step: 66000
+epoch: 31 step: 67499 running_warp_loss: 2.5052 running_gen_loss: 1.8282:  75%|███████████████████████████████████████████▍              | 1594/2126 [18:31<05:55,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_31_checkpoint_step000067500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 30.206 ssim 0.921 fid 32.140████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.22it/s]
+eval_warp_loss : 2.342763457033369 eval_gen_loss 1.7375277921005532 global_step: 67500
+epoch: 31 step: 68031 running_warp_loss: 2.5120 running_gen_loss: 1.8296: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:13<00:00,  1.40it/s]
+epoch: 32 step: 68999 running_warp_loss: 2.4958 running_gen_loss: 1.8026:  46%|██████████████████████████▊                                | 968/2126 [10:48<12:54,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_32_checkpoint_step000069000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+psnr 30.004 ssim 0.919 fid 31.867████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+eval_warp_loss : 2.4197939303186207 eval_gen_loss 1.7569978811122753 global_step: 69000
+epoch: 32 step: 70157 running_warp_loss: 2.4918 running_gen_loss: 1.7966: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:29<00:00,  1.45it/s]
+epoch: 33 step: 70499 running_warp_loss: 2.4749 running_gen_loss: 1.7773:  16%|█████████▍                                                 | 342/2126 [03:49<19:52,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_33_checkpoint_step000070500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 30.547 ssim 0.924 fid 31.390████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.15it/s]
+eval_warp_loss : 2.3331723632635892 eval_gen_loss 1.6797688493022211 global_step: 70500
+epoch: 33 step: 71999 running_warp_loss: 2.4931 running_gen_loss: 1.7825:  87%|██████████████████████████████████████████████████▎       | 1842/2126 [21:18<03:09,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_33_checkpoint_step000072000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 30.271 ssim 0.924 fid 31.309████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+eval_warp_loss : 2.3458549733515137 eval_gen_loss 1.6873597061192547 global_step: 72000
+epoch: 33 step: 72283 running_warp_loss: 2.4912 running_gen_loss: 1.7811: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:14<00:00,  1.40it/s]
+epoch: 34 step: 73499 running_warp_loss: 2.4940 running_gen_loss: 1.7765:  57%|█████████████████████████████████▏                        | 1216/2126 [13:36<10:08,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_34_checkpoint_step000073500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 30.153 ssim 0.925 fid 30.295████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+eval_warp_loss : 2.359630379411909 eval_gen_loss 1.6960429681671991 global_step: 73500
+epoch: 34 step: 74409 running_warp_loss: 2.4984 running_gen_loss: 1.7763: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:31<00:00,  1.44it/s]
+epoch: 35 step: 74999 running_warp_loss: 2.4928 running_gen_loss: 1.7651:  28%|████████████████▎                                          | 590/2126 [06:35<17:06,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_35_checkpoint_step000075000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+psnr 30.345 ssim 0.926 fid 29.777████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.19it/s]
+eval_warp_loss : 2.3115607742910034 eval_gen_loss 1.6805683528935467 global_step: 75000
+epoch: 35 step: 76499 running_warp_loss: 2.4959 running_gen_loss: 1.7626:  98%|█████████████████████████████████████████████████████████ | 2090/2126 [24:05<00:24,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_35_checkpoint_step000076500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 30.627 ssim 0.927 fid 29.108████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.21it/s]
+eval_warp_loss : 2.2833091307569435 eval_gen_loss 1.6421672745987221 global_step: 76500
+epoch: 35 step: 76535 running_warp_loss: 2.4962 running_gen_loss: 1.7626: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:16<00:00,  1.40it/s]
+epoch: 36 step: 77999 running_warp_loss: 2.4920 running_gen_loss: 1.7538:  69%|███████████████████████████████████████▉                  | 1464/2126 [16:20<07:22,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_36_checkpoint_step000078000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 30.232 ssim 0.923 fid 30.451████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.21it/s]
+eval_warp_loss : 2.415824709115205 eval_gen_loss 1.7118175162209406 global_step: 78000
+epoch: 36 step: 78661 running_warp_loss: 2.4904 running_gen_loss: 1.7523: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:29<00:00,  1.45it/s]
+epoch: 37 step: 79499 running_warp_loss: 2.4904 running_gen_loss: 1.7466:  39%|███████████████████████▎                                   | 838/2126 [09:21<14:22,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_37_checkpoint_step000079500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+psnr 30.917 ssim 0.928 fid 30.474████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.21it/s]
+eval_warp_loss : 2.3196696285848266 eval_gen_loss 1.6369878826317963 global_step: 79500
+epoch: 37 step: 80787 running_warp_loss: 2.4838 running_gen_loss: 1.7401: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:29<00:00,  1.45it/s]
+epoch: 38 step: 80999 running_warp_loss: 2.4857 running_gen_loss: 1.7335:  10%|█████▉                                                     | 212/2126 [02:22<21:19,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_38_checkpoint_step000081000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 30.745 ssim 0.927 fid 29.449████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.14it/s]
+eval_warp_loss : 2.347735974523756 eval_gen_loss 1.6388502452108595 global_step: 81000
+epoch: 38 step: 82499 running_warp_loss: 2.4864 running_gen_loss: 1.7322:  81%|██████████████████████████████████████████████▋           | 1712/2126 [19:51<04:36,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_38_checkpoint_step000082500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 30.719 ssim 0.927 fid 29.332████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+eval_warp_loss : 2.3299200888033265 eval_gen_loss 1.6225956987451624 global_step: 82500
+epoch: 38 step: 82913 running_warp_loss: 2.4856 running_gen_loss: 1.7312: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:14<00:00,  1.40it/s]
+epoch: 39 step: 83999 running_warp_loss: 2.4939 running_gen_loss: 1.7359:  51%|█████████████████████████████▋                            | 1086/2126 [12:07<11:36,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_39_checkpoint_step000084000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 30.565 ssim 0.924 fid 30.092████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.23it/s]
+eval_warp_loss : 2.3613350457615323 eval_gen_loss 1.6529350501519662 global_step: 84000
+epoch: 39 step: 85039 running_warp_loss: 2.4951 running_gen_loss: 1.7333: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:30<00:00,  1.45it/s]
+epoch: 40 step: 85499 running_warp_loss: 2.4838 running_gen_loss: 1.7230:  22%|████████████▊                                              | 460/2126 [05:08<18:33,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_40_checkpoint_step000085500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.15it/s]
+psnr 30.935 ssim 0.926 fid 28.081████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.21it/s]
+eval_warp_loss : 2.302403304311964 eval_gen_loss 1.6166399275815044 global_step: 85500
+epoch: 40 step: 86999 running_warp_loss: 2.4958 running_gen_loss: 1.7290:  92%|█████████████████████████████████████████████████████▍    | 1960/2126 [22:38<01:50,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_40_checkpoint_step000087000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+psnr 30.893 ssim 0.927 fid 29.395████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+eval_warp_loss : 2.324483193733074 eval_gen_loss 1.6359868160000555 global_step: 87000
+epoch: 40 step: 87165 running_warp_loss: 2.4938 running_gen_loss: 1.7272: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:16<00:00,  1.40it/s]
+epoch: 41 step: 88499 running_warp_loss: 2.4755 running_gen_loss: 1.7083:  63%|████████████████████████████████████▍                     | 1334/2126 [14:53<08:50,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_41_checkpoint_step000088500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 30.919 ssim 0.926 fid 27.902████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.21it/s]
+eval_warp_loss : 2.322780648867289 eval_gen_loss 1.6143903776451394 global_step: 88500
+epoch: 41 step: 89291 running_warp_loss: 2.4843 running_gen_loss: 1.7132: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 42 step: 89999 running_warp_loss: 2.4943 running_gen_loss: 1.7142:  33%|███████████████████▋                                       | 708/2126 [07:53<15:47,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_42_checkpoint_step000090000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 30.981 ssim 0.927 fid 28.616████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.22it/s]
+eval_warp_loss : 2.331683929319735 eval_gen_loss 1.602348941343802 global_step: 90000
+epoch: 42 step: 91417 running_warp_loss: 2.4876 running_gen_loss: 1.7090: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:27<00:00,  1.45it/s]
+epoch: 43 step: 91499 running_warp_loss: 2.4732 running_gen_loss: 1.6946:   4%|██▎                                                         | 82/2126 [00:55<22:45,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_43_checkpoint_step000091500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 30.966 ssim 0.927 fid 29.336████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.22it/s]
+eval_warp_loss : 2.3332862567018577 eval_gen_loss 1.6012139629434656 global_step: 91500
+epoch: 43 step: 92999 running_warp_loss: 2.4716 running_gen_loss: 1.6971:  74%|███████████████████████████████████████████▏              | 1582/2126 [18:24<06:03,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_43_checkpoint_step000093000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 30.726 ssim 0.926 fid 28.494████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.22it/s]
+eval_warp_loss : 2.3624661984267057 eval_gen_loss 1.643311235639784 global_step: 93000
+epoch: 43 step: 93543 running_warp_loss: 2.4756 running_gen_loss: 1.6979: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:14<00:00,  1.40it/s]
+epoch: 44 step: 94499 running_warp_loss: 2.4787 running_gen_loss: 1.6958:  45%|██████████████████████████▌                                | 956/2126 [10:39<13:02,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_44_checkpoint_step000094500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+psnr 30.957 ssim 0.929 fid 28.640████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.18it/s]
+eval_warp_loss : 2.3600625373699047 eval_gen_loss 1.6073411835564508 global_step: 94500
+epoch: 44 step: 95669 running_warp_loss: 2.4752 running_gen_loss: 1.6939: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 45 step: 95999 running_warp_loss: 2.4959 running_gen_loss: 1.7011:  16%|█████████▏                                                 | 330/2126 [03:41<20:01,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_45_checkpoint_step000096000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+psnr 31.242 ssim 0.929 fid 26.985████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.19it/s]
+eval_warp_loss : 2.3151080718746893 eval_gen_loss 1.5776360895898607 global_step: 96000
+epoch: 45 step: 97499 running_warp_loss: 2.4832 running_gen_loss: 1.6939:  86%|█████████████████████████████████████████████████▉        | 1830/2126 [21:19<03:22,  1.46it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_45_checkpoint_step000097500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:47<00:00,  1.15it/s]
+psnr 31.424 ssim 0.931 fid 27.841████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:47<00:00,  1.14it/s]
+eval_warp_loss : 2.2860889081601745 eval_gen_loss 1.5627436108059354 global_step: 97500
+epoch: 45 step: 97795 running_warp_loss: 2.4837 running_gen_loss: 1.6940: 100%|██████████████████████████████████████████████████████████| 2126/2126 [25:30<00:00,  1.39it/s]
+epoch: 46 step: 98999 running_warp_loss: 2.4552 running_gen_loss: 1.6733:  57%|████████████████████████████████▊                         | 1204/2126 [13:32<10:16,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_46_checkpoint_step000099000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+psnr 30.739 ssim 0.929 fid 29.200████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.18it/s]
+eval_warp_loss : 2.3515424331029258 eval_gen_loss 1.64393315271095 global_step: 99000
+epoch: 46 step: 99921 running_warp_loss: 2.4660 running_gen_loss: 1.6796: 100%|██████████████████████████████████████████████████████████| 2126/2126 [24:35<00:00,  1.44it/s]
+epoch: 47 step: 100499 running_warp_loss: 2.4725 running_gen_loss: 1.6751:  27%|███████████████▊                                          | 578/2126 [06:26<17:14,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_47_checkpoint_step000100500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.085 ssim 0.929 fid 29.049████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+eval_warp_loss : 2.402515201656907 eval_gen_loss 1.6336357416930023 global_step: 100500
+epoch: 47 step: 101999 running_warp_loss: 2.4699 running_gen_loss: 1.6747:  98%|███████████████████████████████████████████████████████▋ | 2078/2126 [23:57<00:32,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_47_checkpoint_step000102000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+psnr 30.651 ssim 0.928 fid 29.493████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.18it/s]
+eval_warp_loss : 2.443834666852598 eval_gen_loss 1.6672494808832805 global_step: 102000
+epoch: 47 step: 102047 running_warp_loss: 2.4707 running_gen_loss: 1.6752: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:16<00:00,  1.40it/s]
+epoch: 48 step: 103499 running_warp_loss: 2.4458 running_gen_loss: 1.6608:  68%|██████████████████████████████████████▉                  | 1452/2126 [16:11<07:30,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_48_checkpoint_step000103500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:47<00:00,  1.14it/s]
+psnr 30.320 ssim 0.928 fid 28.809████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:47<00:00,  1.20it/s]
+eval_warp_loss : 2.4080696922761424 eval_gen_loss 1.6330973660504375 global_step: 103500
+epoch: 48 step: 104173 running_warp_loss: 2.4511 running_gen_loss: 1.6617: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:29<00:00,  1.45it/s]
+epoch: 49 step: 104999 running_warp_loss: 2.4710 running_gen_loss: 1.6738:  39%|██████████████████████▌                                   | 826/2126 [09:13<14:29,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_49_checkpoint_step000105000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 30.608 ssim 0.926 fid 28.344████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.23it/s]
+eval_warp_loss : 2.4054555230670505 eval_gen_loss 1.6393891815786008 global_step: 105000
+epoch: 49 step: 106299 running_warp_loss: 2.4779 running_gen_loss: 1.6763: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:29<00:00,  1.45it/s]
+epoch: 50 step: 106499 running_warp_loss: 2.4649 running_gen_loss: 1.6676:   9%|█████▍                                                    | 200/2126 [02:14<21:29,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_50_checkpoint_step000106500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 30.948 ssim 0.930 fid 28.848████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.21it/s]
+eval_warp_loss : 2.3782993952433267 eval_gen_loss 1.6139030169557642 global_step: 106500
+epoch: 50 step: 107999 running_warp_loss: 2.4657 running_gen_loss: 1.6627:  80%|█████████████████████████████████████████████▌           | 1700/2126 [19:46<04:45,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_50_checkpoint_step000108000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 31.257 ssim 0.931 fid 27.989████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.17it/s]
+eval_warp_loss : 2.3422960109180875 eval_gen_loss 1.577216958558118 global_step: 108000
+epoch: 50 step: 108425 running_warp_loss: 2.4695 running_gen_loss: 1.6650: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:17<00:00,  1.40it/s]
+epoch: 51 step: 109499 running_warp_loss: 2.4548 running_gen_loss: 1.6544:  51%|████████████████████████████▊                            | 1074/2126 [11:59<11:44,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_51_checkpoint_step000109500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.360 ssim 0.932 fid 27.601████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.23it/s]
+eval_warp_loss : 2.347652667098575 eval_gen_loss 1.5770072164358917 global_step: 109500
+epoch: 51 step: 110551 running_warp_loss: 2.4636 running_gen_loss: 1.6590: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:29<00:00,  1.45it/s]
+epoch: 52 step: 110999 running_warp_loss: 2.4806 running_gen_loss: 1.6671:  21%|████████████▏                                             | 448/2126 [05:00<18:43,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_52_checkpoint_step000111000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 30.945 ssim 0.930 fid 27.684████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.22it/s]
+eval_warp_loss : 2.3813375609892384 eval_gen_loss 1.6082816278492962 global_step: 111000
+epoch: 52 step: 112499 running_warp_loss: 2.4688 running_gen_loss: 1.6567:  92%|████████████████████████████████████████████████████▏    | 1948/2126 [22:31<01:59,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_52_checkpoint_step000112500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.172 ssim 0.933 fid 27.450████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.22it/s]
+eval_warp_loss : 2.3169206844435797 eval_gen_loss 1.5656349791420832 global_step: 112500
+epoch: 52 step: 112677 running_warp_loss: 2.4702 running_gen_loss: 1.6574: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:16<00:00,  1.40it/s]
+epoch: 53 step: 113999 running_warp_loss: 2.4689 running_gen_loss: 1.6534:  62%|███████████████████████████████████▍                     | 1322/2126 [14:45<08:58,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_53_checkpoint_step000114000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 30.968 ssim 0.932 fid 28.543████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.20it/s]
+eval_warp_loss : 2.392388394585362 eval_gen_loss 1.63271654314465 global_step: 114000
+epoch: 53 step: 114803 running_warp_loss: 2.4761 running_gen_loss: 1.6596: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:30<00:00,  1.45it/s]
+epoch: 54 step: 115499 running_warp_loss: 2.4634 running_gen_loss: 1.6484:  33%|██████████████████▉                                       | 696/2126 [07:46<15:57,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_54_checkpoint_step000115500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.366 ssim 0.934 fid 27.436████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.22it/s]
+eval_warp_loss : 2.339246074358622 eval_gen_loss 1.5702478797347457 global_step: 115500
+epoch: 54 step: 116929 running_warp_loss: 2.4620 running_gen_loss: 1.6465: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 55 step: 116999 running_warp_loss: 2.4806 running_gen_loss: 1.6492:   3%|█▉                                                         | 70/2126 [00:47<22:54,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_55_checkpoint_step000117000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.607 ssim 0.934 fid 27.406████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.17it/s]
+eval_warp_loss : 2.319543617743033 eval_gen_loss 1.54793103756728 global_step: 117000
+epoch: 55 step: 118499 running_warp_loss: 2.4608 running_gen_loss: 1.6422:  74%|██████████████████████████████████████████               | 1570/2126 [18:16<06:11,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_55_checkpoint_step000118500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.267 ssim 0.932 fid 27.996████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.20it/s]
+eval_warp_loss : 2.396004562024717 eval_gen_loss 1.5980837455502264 global_step: 118500
+epoch: 55 step: 119055 running_warp_loss: 2.4590 running_gen_loss: 1.6409: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:14<00:00,  1.40it/s]
+epoch: 56 step: 119999 running_warp_loss: 2.4619 running_gen_loss: 1.6401:  44%|█████████████████████████▊                                | 944/2126 [10:31<13:09,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_56_checkpoint_step000120000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 31.501 ssim 0.933 fid 26.950████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.22it/s]
+eval_warp_loss : 2.3366941566820496 eval_gen_loss 1.5500952491053828 global_step: 120000
+epoch: 56 step: 121181 running_warp_loss: 2.4644 running_gen_loss: 1.6403: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:27<00:00,  1.45it/s]
+epoch: 57 step: 121499 running_warp_loss: 2.4728 running_gen_loss: 1.6471:  15%|████████▋                                                 | 318/2126 [03:33<20:08,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_57_checkpoint_step000121500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 31.153 ssim 0.931 fid 28.156████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.20it/s]
+eval_warp_loss : 2.4157508501300105 eval_gen_loss 1.6063427240760237 global_step: 121500
+epoch: 57 step: 122999 running_warp_loss: 2.4633 running_gen_loss: 1.6379:  86%|████████████████████████████████████████████████▋        | 1818/2126 [21:03<03:25,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_57_checkpoint_step000123000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 31.471 ssim 0.933 fid 26.857████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.23it/s]
+eval_warp_loss : 2.3481991357273526 eval_gen_loss 1.5721436076694064 global_step: 123000
+epoch: 57 step: 123307 running_warp_loss: 2.4601 running_gen_loss: 1.6354: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:14<00:00,  1.40it/s]
+epoch: 58 step: 124499 running_warp_loss: 2.4599 running_gen_loss: 1.6327:  56%|███████████████████████████████▉                         | 1192/2126 [13:18<10:25,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_58_checkpoint_step000124500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+psnr 31.651 ssim 0.935 fid 26.611████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.20it/s]
+eval_warp_loss : 2.3115475133613304 eval_gen_loss 1.5438447373884696 global_step: 124500
+epoch: 58 step: 125433 running_warp_loss: 2.4622 running_gen_loss: 1.6335: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:30<00:00,  1.45it/s]
+epoch: 59 step: 125999 running_warp_loss: 2.4581 running_gen_loss: 1.6308:  27%|███████████████▍                                          | 566/2126 [06:19<17:22,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_59_checkpoint_step000126000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.680 ssim 0.935 fid 26.739████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.22it/s]
+eval_warp_loss : 2.314793207027294 eval_gen_loss 1.5525955182534676 global_step: 126000
+epoch: 59 step: 127499 running_warp_loss: 2.4643 running_gen_loss: 1.6337:  97%|███████████████████████████████████████████████████████▍ | 2066/2126 [23:48<00:40,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_59_checkpoint_step000127500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 31.429 ssim 0.932 fid 26.631████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.27it/s]
+eval_warp_loss : 2.3696117643956787 eval_gen_loss 1.5803077220916748 global_step: 127500
+epoch: 59 step: 127559 running_warp_loss: 2.4637 running_gen_loss: 1.6330: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:14<00:00,  1.40it/s]
+epoch: 60 step: 128999 running_warp_loss: 2.4681 running_gen_loss: 1.6326:  68%|██████████████████████████████████████▌                  | 1440/2126 [16:03<07:38,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_60_checkpoint_step000129000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+psnr 31.797 ssim 0.937 fid 26.009████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.22it/s]
+eval_warp_loss : 2.2823585867881775 eval_gen_loss 1.5242426307113082 global_step: 129000
+epoch: 60 step: 129685 running_warp_loss: 2.4674 running_gen_loss: 1.6310: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:29<00:00,  1.45it/s]
+epoch: 61 step: 130499 running_warp_loss: 2.4531 running_gen_loss: 1.6223:  38%|██████████████████████▏                                   | 814/2126 [09:05<14:36,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_61_checkpoint_step000130500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.17it/s]
+psnr 31.961 ssim 0.936 fid 26.558████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.24it/s]
+eval_warp_loss : 2.3005025210203947 eval_gen_loss 1.529693314322719 global_step: 130500
+epoch: 61 step: 131811 running_warp_loss: 2.4543 running_gen_loss: 1.6221: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 62 step: 131999 running_warp_loss: 2.4595 running_gen_loss: 1.6259:   9%|█████▏                                                    | 188/2126 [02:06<21:36,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_62_checkpoint_step000132000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+psnr 31.442 ssim 0.932 fid 26.865████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+eval_warp_loss : 2.404801799191369 eval_gen_loss 1.587788670151322 global_step: 132000
+epoch: 62 step: 133499 running_warp_loss: 2.4609 running_gen_loss: 1.6230:  79%|█████████████████████████████████████████████▎           | 1688/2126 [19:36<04:52,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_62_checkpoint_step000133500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 31.443 ssim 0.933 fid 27.823████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.23it/s]
+eval_warp_loss : 2.356335381666819 eval_gen_loss 1.548326551914215 global_step: 133500
+epoch: 62 step: 133937 running_warp_loss: 2.4586 running_gen_loss: 1.6205: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:15<00:00,  1.40it/s]
+epoch: 63 step: 134999 running_warp_loss: 2.4573 running_gen_loss: 1.6208:  50%|████████████████████████████▍                            | 1062/2126 [11:51<11:51,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_63_checkpoint_step000135000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 31.548 ssim 0.936 fid 26.840████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.22it/s]
+eval_warp_loss : 2.304120386088336 eval_gen_loss 1.545160629131176 global_step: 135000
+epoch: 63 step: 136063 running_warp_loss: 2.4587 running_gen_loss: 1.6188: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:29<00:00,  1.45it/s]
+epoch: 64 step: 136499 running_warp_loss: 2.4570 running_gen_loss: 1.6127:  21%|███████████▉                                              | 436/2126 [04:52<18:49,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_64_checkpoint_step000136500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.499 ssim 0.934 fid 27.135████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.24it/s]
+eval_warp_loss : 2.363201947123916 eval_gen_loss 1.550648585513786 global_step: 136500
+epoch: 64 step: 137999 running_warp_loss: 2.4527 running_gen_loss: 1.6121:  91%|███████████████████████████████████████████████████▉     | 1936/2126 [22:22<02:07,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_64_checkpoint_step000138000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 31.747 ssim 0.937 fid 26.130████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.20it/s]
+eval_warp_loss : 2.2982445535836398 eval_gen_loss 1.528959318443581 global_step: 138000
+epoch: 64 step: 138189 running_warp_loss: 2.4540 running_gen_loss: 1.6125: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:16<00:00,  1.40it/s]
+epoch: 65 step: 139499 running_warp_loss: 2.4573 running_gen_loss: 1.6141:  62%|███████████████████████████████████                      | 1310/2126 [14:37<09:06,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_65_checkpoint_step000139500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.750 ssim 0.934 fid 26.285████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.21it/s]
+eval_warp_loss : 2.3319274562376515 eval_gen_loss 1.536361641354031 global_step: 139500
+epoch: 65 step: 140315 running_warp_loss: 2.4523 running_gen_loss: 1.6101: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:29<00:00,  1.45it/s]
+epoch: 66 step: 140999 running_warp_loss: 2.4573 running_gen_loss: 1.6161:  32%|██████████████████▋                                       | 684/2126 [07:38<16:05,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_66_checkpoint_step000141000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 31.730 ssim 0.936 fid 26.851████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+eval_warp_loss : 2.3358112463244685 eval_gen_loss 1.5380372714113306 global_step: 141000
+epoch: 66 step: 142441 running_warp_loss: 2.4615 running_gen_loss: 1.6133: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:30<00:00,  1.45it/s]
+epoch: 67 step: 142499 running_warp_loss: 2.4645 running_gen_loss: 1.6082:   3%|█▌                                                         | 58/2126 [00:39<23:04,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_67_checkpoint_step000142500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.20it/s]
+psnr 32.021 ssim 0.938 fid 25.285████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+eval_warp_loss : 2.255975553282985 eval_gen_loss 1.4872712713700753 global_step: 142500
+epoch: 67 step: 143999 running_warp_loss: 2.4520 running_gen_loss: 1.6062:  73%|█████████████████████████████████████████▊               | 1558/2126 [18:09<06:20,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_67_checkpoint_step000144000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 31.795 ssim 0.936 fid 26.363████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.19it/s]
+eval_warp_loss : 2.3548315498563976 eval_gen_loss 1.5411590337753296 global_step: 144000
+epoch: 67 step: 144567 running_warp_loss: 2.4474 running_gen_loss: 1.6025: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:16<00:00,  1.40it/s]
+epoch: 68 step: 145499 running_warp_loss: 2.4477 running_gen_loss: 1.6018:  44%|█████████████████████████▍                                | 932/2126 [10:24<13:19,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_68_checkpoint_step000145500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.302 ssim 0.934 fid 27.832████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.20it/s]
+eval_warp_loss : 2.4067243492161787 eval_gen_loss 1.576257586479187 global_step: 145500
+epoch: 68 step: 146693 running_warp_loss: 2.4508 running_gen_loss: 1.6026: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:29<00:00,  1.45it/s]
+epoch: 69 step: 146999 running_warp_loss: 2.4781 running_gen_loss: 1.6193:  14%|████████▎                                                 | 306/2126 [03:25<20:17,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_69_checkpoint_step000147000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.885 ssim 0.937 fid 25.462████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.24it/s]
+eval_warp_loss : 2.3102220407238714 eval_gen_loss 1.5130204536296703 global_step: 147000
+epoch: 69 step: 148499 running_warp_loss: 2.4560 running_gen_loss: 1.6040:  85%|████████████████████████████████████████████████▍        | 1806/2126 [20:55<03:34,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_69_checkpoint_step000148500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 31.862 ssim 0.937 fid 26.862████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.23it/s]
+eval_warp_loss : 2.323217451572418 eval_gen_loss 1.5215970321937844 global_step: 148500
+epoch: 69 step: 148819 running_warp_loss: 2.4563 running_gen_loss: 1.6040: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:16<00:00,  1.40it/s]
+epoch: 70 step: 149999 running_warp_loss: 2.4575 running_gen_loss: 1.6020:  56%|███████████████████████████████▋                         | 1180/2126 [13:09<10:32,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_70_checkpoint_step000150000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 31.640 ssim 0.936 fid 25.491████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.24it/s]
+eval_warp_loss : 2.3547864578388356 eval_gen_loss 1.5517835440459076 global_step: 150000
+epoch: 70 step: 150945 running_warp_loss: 2.4515 running_gen_loss: 1.5979: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:27<00:00,  1.45it/s]
+epoch: 71 step: 151499 running_warp_loss: 2.4429 running_gen_loss: 1.5934:  26%|███████████████                                           | 554/2126 [06:11<17:31,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_71_checkpoint_step000151500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 31.536 ssim 0.935 fid 27.311████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.22it/s]
+eval_warp_loss : 2.351792326679936 eval_gen_loss 1.5519900189505682 global_step: 151500
+epoch: 71 step: 152999 running_warp_loss: 2.4407 running_gen_loss: 1.5922:  97%|███████████████████████████████████████████████████████  | 2054/2126 [23:42<00:48,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_71_checkpoint_step000153000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.930 ssim 0.937 fid 26.235████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.24it/s]
+eval_warp_loss : 2.3273165027300515 eval_gen_loss 1.512676386921494 global_step: 153000
+epoch: 71 step: 153071 running_warp_loss: 2.4412 running_gen_loss: 1.5926: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:16<00:00,  1.40it/s]
+epoch: 72 step: 154499 running_warp_loss: 2.4465 running_gen_loss: 1.5916:  67%|██████████████████████████████████████▎                  | 1428/2126 [15:55<07:47,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_72_checkpoint_step000154500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:44<00:00,  1.20it/s]
+psnr 31.943 ssim 0.937 fid 25.826████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:44<00:00,  1.22it/s]
+eval_warp_loss : 2.307798809475369 eval_gen_loss 1.5142121138396087 global_step: 154500
+epoch: 72 step: 155197 running_warp_loss: 2.4458 running_gen_loss: 1.5915: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 73 step: 155999 running_warp_loss: 2.4351 running_gen_loss: 1.5826:  38%|█████████████████████▉                                    | 802/2126 [08:57<14:46,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_73_checkpoint_step000156000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.878 ssim 0.937 fid 26.063████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.21it/s]
+eval_warp_loss : 2.3320665491951837 eval_gen_loss 1.525586070837798 global_step: 156000
+epoch: 73 step: 157323 running_warp_loss: 2.4394 running_gen_loss: 1.5871: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:30<00:00,  1.45it/s]
+epoch: 74 step: 157499 running_warp_loss: 2.4538 running_gen_loss: 1.5884:   8%|████▊                                                     | 176/2126 [01:58<21:43,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_74_checkpoint_step000157500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 31.813 ssim 0.938 fid 26.260████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.20it/s]
+eval_warp_loss : 2.3074191985306918 eval_gen_loss 1.5084054734971788 global_step: 157500
+epoch: 74 step: 158999 running_warp_loss: 2.4491 running_gen_loss: 1.5919:  79%|████████████████████████████████████████████▉            | 1676/2126 [19:28<05:00,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_74_checkpoint_step000159000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 31.535 ssim 0.935 fid 25.862████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.13it/s]
+eval_warp_loss : 2.3924258086416454 eval_gen_loss 1.5620957480536566 global_step: 159000
+epoch: 74 step: 159449 running_warp_loss: 2.4468 running_gen_loss: 1.5905: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:16<00:00,  1.40it/s]
+epoch: 75 step: 160499 running_warp_loss: 2.4455 running_gen_loss: 1.5890:  49%|████████████████████████████▏                            | 1050/2126 [11:42<11:59,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_75_checkpoint_step000160500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 31.626 ssim 0.937 fid 26.723████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.22it/s]
+eval_warp_loss : 2.358596095332393 eval_gen_loss 1.5426204182483532 global_step: 160500
+epoch: 75 step: 161575 running_warp_loss: 2.4507 running_gen_loss: 1.5914: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 76 step: 161999 running_warp_loss: 2.4459 running_gen_loss: 1.5928:  20%|███████████▌                                              | 424/2126 [04:44<18:57,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_76_checkpoint_step000162000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.16it/s]
+psnr 32.048 ssim 0.938 fid 26.281████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.19it/s]
+eval_warp_loss : 2.3333960109286838 eval_gen_loss 1.5139136049482558 global_step: 162000
+epoch: 76 step: 163499 running_warp_loss: 2.4495 running_gen_loss: 1.5894:  90%|███████████████████████████████████████████████████▌     | 1924/2126 [22:14<02:15,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_76_checkpoint_step000163500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 31.721 ssim 0.939 fid 26.426████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.23it/s]
+eval_warp_loss : 2.3452726536326938 eval_gen_loss 1.5175439229717962 global_step: 163500
+epoch: 76 step: 163701 running_warp_loss: 2.4492 running_gen_loss: 1.5891: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:16<00:00,  1.40it/s]
+epoch: 77 step: 164999 running_warp_loss: 2.4322 running_gen_loss: 1.5783:  61%|██████████████████████████████████▊                      | 1298/2126 [14:28<09:13,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_77_checkpoint_step000165000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.860 ssim 0.938 fid 26.667████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+eval_warp_loss : 2.348609288533529 eval_gen_loss 1.5189179844326444 global_step: 165000
+epoch: 77 step: 165827 running_warp_loss: 2.4340 running_gen_loss: 1.5777: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 78 step: 166499 running_warp_loss: 2.4384 running_gen_loss: 1.5822:  32%|██████████████████▎                                       | 672/2126 [07:30<16:14,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_78_checkpoint_step000166500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 31.960 ssim 0.938 fid 26.860████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+eval_warp_loss : 2.3310503076623985 eval_gen_loss 1.5288926053930212 global_step: 166500
+epoch: 78 step: 167953 running_warp_loss: 2.4395 running_gen_loss: 1.5799: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 79 step: 167999 running_warp_loss: 2.4756 running_gen_loss: 1.6014:   2%|█▎                                                         | 46/2126 [00:31<23:10,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_79_checkpoint_step000168000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 32.087 ssim 0.939 fid 25.950████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.22it/s]
+eval_warp_loss : 2.2914045298541033 eval_gen_loss 1.4958518920121369 global_step: 168000
+epoch: 79 step: 169499 running_warp_loss: 2.4540 running_gen_loss: 1.5869:  73%|█████████████████████████████████████████▍               | 1546/2126 [18:01<06:28,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_79_checkpoint_step000169500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 32.045 ssim 0.938 fid 25.378████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.22it/s]
+eval_warp_loss : 2.297187286394614 eval_gen_loss 1.5070881379975214 global_step: 169500
+epoch: 79 step: 170079 running_warp_loss: 2.4497 running_gen_loss: 1.5847: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:15<00:00,  1.40it/s]
+epoch: 80 step: 170999 running_warp_loss: 2.4438 running_gen_loss: 1.5798:  43%|█████████████████████████                                 | 920/2126 [10:16<13:27,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_80_checkpoint_step000171000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.884 ssim 0.939 fid 25.762████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.20it/s]
+eval_warp_loss : 2.309960020913018 eval_gen_loss 1.5039868619706895 global_step: 171000
+epoch: 80 step: 172205 running_warp_loss: 2.4497 running_gen_loss: 1.5831: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:29<00:00,  1.45it/s]
+epoch: 81 step: 172499 running_warp_loss: 2.4551 running_gen_loss: 1.5847:  14%|████████                                                  | 294/2126 [03:17<20:24,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_81_checkpoint_step000172500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 32.187 ssim 0.939 fid 26.182████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.21it/s]
+eval_warp_loss : 2.324113854655513 eval_gen_loss 1.4953083771246451 global_step: 172500
+epoch: 81 step: 173999 running_warp_loss: 2.4503 running_gen_loss: 1.5823:  84%|████████████████████████████████████████████████         | 1794/2126 [20:47<03:42,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_81_checkpoint_step000174000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 32.216 ssim 0.941 fid 26.153████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+eval_warp_loss : 2.2824875359182006 eval_gen_loss 1.4797551808533844 global_step: 174000
+epoch: 81 step: 174331 running_warp_loss: 2.4500 running_gen_loss: 1.5827: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:15<00:00,  1.40it/s]
+epoch: 82 step: 175499 running_warp_loss: 2.4376 running_gen_loss: 1.5712:  55%|███████████████████████████████▎                         | 1168/2126 [13:01<10:40,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_82_checkpoint_step000175500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 31.724 ssim 0.937 fid 26.238████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.22it/s]
+eval_warp_loss : 2.357578820652432 eval_gen_loss 1.5360767333595842 global_step: 175500
+epoch: 82 step: 176457 running_warp_loss: 2.4416 running_gen_loss: 1.5743: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:29<00:00,  1.45it/s]
+epoch: 83 step: 176999 running_warp_loss: 2.4515 running_gen_loss: 1.5772:  25%|██████████████▊                                           | 542/2126 [06:02<17:39,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_83_checkpoint_step000177000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 32.092 ssim 0.940 fid 25.040████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.20it/s]
+eval_warp_loss : 2.2860750136552035 eval_gen_loss 1.4901714037965845 global_step: 177000
+epoch: 83 step: 178499 running_warp_loss: 2.4485 running_gen_loss: 1.5769:  96%|██████████████████████████████████████████████████████▋  | 2042/2126 [23:32<00:56,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_83_checkpoint_step000178500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 32.062 ssim 0.940 fid 26.761████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.21it/s]
+eval_warp_loss : 2.3209829749884427 eval_gen_loss 1.5098608710147716 global_step: 178500
+epoch: 83 step: 178583 running_warp_loss: 2.4483 running_gen_loss: 1.5766: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:14<00:00,  1.40it/s]
+epoch: 84 step: 179999 running_warp_loss: 2.4473 running_gen_loss: 1.5765:  67%|█████████████████████████████████████▉                   | 1416/2126 [15:47<07:54,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_84_checkpoint_step000180000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.17it/s]
+psnr 32.357 ssim 0.941 fid 25.736████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:46<00:00,  1.22it/s]
+eval_warp_loss : 2.2822411391470165 eval_gen_loss 1.4810160839999165 global_step: 180000
+epoch: 84 step: 180709 running_warp_loss: 2.4449 running_gen_loss: 1.5750: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 85 step: 181499 running_warp_loss: 2.4414 running_gen_loss: 1.5741:  37%|█████████████████████▌                                    | 790/2126 [08:48<14:53,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_85_checkpoint_step000181500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.955 ssim 0.940 fid 26.837████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.21it/s]
+eval_warp_loss : 2.328554266028934 eval_gen_loss 1.499688821810263 global_step: 181500
+epoch: 85 step: 182835 running_warp_loss: 2.4351 running_gen_loss: 1.5662: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 86 step: 182999 running_warp_loss: 2.4284 running_gen_loss: 1.5600:   8%|████▍                                                     | 164/2126 [01:50<21:52,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_86_checkpoint_step000183000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.869 ssim 0.940 fid 26.047████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.23it/s]
+eval_warp_loss : 2.292098394146672 eval_gen_loss 1.4996160136328802 global_step: 183000
+epoch: 86 step: 184499 running_warp_loss: 2.4351 running_gen_loss: 1.5652:  78%|████████████████████████████████████████████▌            | 1664/2126 [19:20<05:09,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_86_checkpoint_step000184500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 32.183 ssim 0.942 fid 24.665████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.21it/s]
+eval_warp_loss : 2.254046418048717 eval_gen_loss 1.4464165104760065 global_step: 184500
+epoch: 86 step: 184961 running_warp_loss: 2.4403 running_gen_loss: 1.5686: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:15<00:00,  1.40it/s]
+epoch: 87 step: 185999 running_warp_loss: 2.4380 running_gen_loss: 1.5671:  49%|███████████████████████████▊                             | 1038/2126 [11:34<12:07,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_87_checkpoint_step000186000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 32.347 ssim 0.940 fid 25.379████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+eval_warp_loss : 2.315391900362792 eval_gen_loss 1.4828959902127583 global_step: 186000
+epoch: 87 step: 187087 running_warp_loss: 2.4371 running_gen_loss: 1.5655: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 88 step: 187499 running_warp_loss: 2.4177 running_gen_loss: 1.5522:  19%|███████████▏                                              | 412/2126 [04:35<19:06,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_88_checkpoint_step000187500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 32.187 ssim 0.941 fid 25.757████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.21it/s]
+eval_warp_loss : 2.283951209651099 eval_gen_loss 1.4788704183366563 global_step: 187500
+epoch: 88 step: 188999 running_warp_loss: 2.4417 running_gen_loss: 1.5685:  90%|███████████████████████████████████████████████████▎     | 1912/2126 [22:04<02:23,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_88_checkpoint_step000189000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 31.888 ssim 0.939 fid 26.644████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.20it/s]
+eval_warp_loss : 2.3533872851619013 eval_gen_loss 1.5268508262104459 global_step: 189000
+epoch: 88 step: 189213 running_warp_loss: 2.4407 running_gen_loss: 1.5678: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:13<00:00,  1.40it/s]
+epoch: 89 step: 190499 running_warp_loss: 2.4380 running_gen_loss: 1.5645:  60%|██████████████████████████████████▍                      | 1286/2126 [14:20<09:21,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_89_checkpoint_step000190500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 32.026 ssim 0.941 fid 25.290████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.21it/s]
+eval_warp_loss : 2.2947057949172125 eval_gen_loss 1.487519869097957 global_step: 190500
+epoch: 89 step: 191339 running_warp_loss: 2.4415 running_gen_loss: 1.5682: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:27<00:00,  1.45it/s]
+epoch: 90 step: 191999 running_warp_loss: 2.4423 running_gen_loss: 1.5674:  31%|██████████████████                                        | 660/2126 [07:21<16:20,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_90_checkpoint_step000192000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 31.989 ssim 0.939 fid 25.426████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.23it/s]
+eval_warp_loss : 2.3333105908499823 eval_gen_loss 1.5003358478899356 global_step: 192000
+epoch: 90 step: 193465 running_warp_loss: 2.4351 running_gen_loss: 1.5625: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:27<00:00,  1.45it/s]
+epoch: 91 step: 193499 running_warp_loss: 2.4972 running_gen_loss: 1.5867:   2%|▉                                                          | 34/2126 [00:23<23:18,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_91_checkpoint_step000193500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.20it/s]
+psnr 31.944 ssim 0.941 fid 26.692████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.26it/s]
+eval_warp_loss : 2.3159104122055902 eval_gen_loss 1.5068856411510043 global_step: 193500
+epoch: 91 step: 194999 running_warp_loss: 2.4411 running_gen_loss: 1.5625:  72%|█████████████████████████████████████████▏               | 1534/2126 [17:52<06:35,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_91_checkpoint_step000195000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 32.471 ssim 0.943 fid 25.495████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.23it/s]
+eval_warp_loss : 2.258645530100222 eval_gen_loss 1.4466576885294031 global_step: 195000
+epoch: 91 step: 195591 running_warp_loss: 2.4393 running_gen_loss: 1.5624: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:14<00:00,  1.40it/s]
+epoch: 92 step: 196499 running_warp_loss: 2.4454 running_gen_loss: 1.5668:  43%|████████████████████████▊                                 | 908/2126 [10:07<13:34,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_92_checkpoint_step000196500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 31.967 ssim 0.939 fid 25.695████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.17it/s]
+eval_warp_loss : 2.3666232515264443 eval_gen_loss 1.51044942273034 global_step: 196500
+epoch: 92 step: 197717 running_warp_loss: 2.4391 running_gen_loss: 1.5618: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 93 step: 197999 running_warp_loss: 2.4292 running_gen_loss: 1.5536:  13%|███████▋                                                  | 282/2126 [03:09<20:32,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_93_checkpoint_step000198000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.17it/s]
+psnr 32.210 ssim 0.940 fid 25.615████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.20it/s]
+eval_warp_loss : 2.289137992593977 eval_gen_loss 1.478644488034425 global_step: 198000
+epoch: 93 step: 199499 running_warp_loss: 2.4316 running_gen_loss: 1.5562:  84%|███████████████████████████████████████████████▊         | 1782/2126 [20:38<03:49,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_93_checkpoint_step000199500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.18it/s]
+psnr 32.348 ssim 0.943 fid 25.975████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.20it/s]
+eval_warp_loss : 2.283254283445853 eval_gen_loss 1.4735488472161469 global_step: 199500
+epoch: 93 step: 199843 running_warp_loss: 2.4343 running_gen_loss: 1.5578: 100%|█████████████████████████████████████████████████████████| 2126/2126 [25:15<00:00,  1.40it/s]
+epoch: 94 step: 200999 running_warp_loss: 2.4322 running_gen_loss: 1.5565:  54%|██████████████████████████████▉                          | 1156/2126 [12:53<10:49,  1.49it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_94_checkpoint_step000201000.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.19it/s]
+psnr 32.238 ssim 0.941 fid 26.078████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.23it/s]
+eval_warp_loss : 2.320042861832513 eval_gen_loss 1.4799641194166961 global_step: 201000
+epoch: 94 step: 201969 running_warp_loss: 2.4352 running_gen_loss: 1.5582: 100%|█████████████████████████████████████████████████████████| 2126/2126 [24:28<00:00,  1.45it/s]
+epoch: 95 step: 202499 running_warp_loss: 2.4304 running_gen_loss: 1.5516:  25%|██████████████▍                                           | 530/2126 [05:55<17:47,  1.50it/s]Saved checkpoint: ./checkpoints/renderer/Pro_renderer_T1_ref_N3/renderer_T1_ref_N3_epoch_95_checkpoint_step000202500.pth
+Evaluating model for 1 epochs
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.20it/s]
+psnr 32.387 ssim 0.943 fid 25.902████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:45<00:00,  1.24it/s]
+eval_warp_loss : 2.2820914299399764 eval_gen_loss 1.4616483803148623 global_step: 202500
+epoch: 95 step: 202825 running_warp_loss: 2.4343 running_gen_loss: 1.5549:  40%|███████████████████████▎                                  | 856/2126 [10:19<14:16,  1.48it/s]epoch: 95 step: 202846 running_warp_loss: 2.4359 running_gen_loss: 1.5562:  41%|███████████████████████▉                                  | 877/2126 [10:33<14:08,  1.47it/s]
